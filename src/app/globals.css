@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+/* =========================
+   THEME TOKENS — Tailwind v4
+========================= */
+@theme {
+  /* =========================
+     BRAND / ACCENT
+  ========================= */
+  --color-primary: #7e813d;
+  --color-on-primary: #ffffff;
+
+  /* =========================
+     TEXT
+  ========================= */
+  --color-text-primary: #31332c;
+  --color-text-secondary: #5e6058;
+  --color-text-muted: #78716c;
+
+  /* =========================
+     EARTH / EDITORIAL
+  ========================= */
+  --color-earth: #7e553e;
+  --color-earth-soft: #f0eee9;
+
+  /* =========================
+     BACKGROUNDS / SURFACES
+  ========================= */
+  --color-background: #f0eee9;
+  --color-surface: #ffffff;
+
+  /* =========================
+     OPTIONAL SEMANTIC ALIASES
+  ========================= */
+  --color-heading: #31332c;
+  --color-body: #5e6058;
+  --color-label: #78716c;
+  --color-link: #7e553e;
+  --color-card: #ffffff;
+  --color-section: #f0eee9;
+}
+
+/* =========================
+   BASE
+========================= */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-on-background);
+    font-family: var(--font-body);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: var(--color-primary-container);
+    color: var(--color-on-primary-container);
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+/* =========================
+   UTILITIES / HELPERS
+========================= */
+@layer utilities {
+  .editorial-shadow {
+    box-shadow: var(--shadow-editorial);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .section-padding {
+    @apply px-8 md:px-24;
+  }
+
+  .bleed-right {
+    margin-right: -5vw;
+  }
+
+  .bleed-left {
+    margin-left: -5vw;
+  }
+}
