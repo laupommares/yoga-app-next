@@ -26,8 +26,8 @@ const bookings = [
             </h2>
   
             <p className="mb-12 text-lg text-on-surface-variant">
-              Limited availability to ensure an intimate and personalized
-              experience for every practitioner.
+              Disponibilidad limitada para garantizar una experiencia íntima y personalizada
+              para cada profesional.
             </p>
   
             <div className="mb-4 flex items-center gap-4 text-sm uppercase tracking-widest text-on-surface-variant">
