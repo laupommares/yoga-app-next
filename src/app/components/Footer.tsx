@@ -1,13 +1,18 @@
+import Image from "next/image";
+
 export default function Footer() {
     return (
       <footer className="w-full bg-stone-100 pb-12 pt-24">
         <div className="flex flex-col items-center justify-between gap-8 px-12 text-center md:flex-row md:text-left">
           <div className="space-y-4">
-            <span className="font-headline block text-2xl italic tracking-wide text-stone-800">
-              Elena Yoga
-            </span>
+          <Image
+            src="/logo.svg"
+            alt="Logo"
+            width={200}
+            height={57.39}/>
+
             <p className="font-headline text-sm font-light text-stone-600">
-              © 2024 Elena Yoga. Presence in movement.
+              © 2026 Jorgelina cantone. Presencia en moviemiento.
             </p>
           </div>
   

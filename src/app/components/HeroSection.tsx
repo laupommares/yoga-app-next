@@ -3,14 +3,12 @@ export default function HeroSection() {
       <section className="relative mb-32 flex min-h-230.25 flex-col justify-center overflow-hidden px-8 md:px-24">
         <div className="grid h-full grid-cols-12 items-center gap-4">
           <div className="relative z-10 col-span-12 md:col-span-8 md:translate-x-110">
-            <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAvNCcNSVW4W3gj-IP-PaX66C39pvtyMoo-NYyep6pImVDzPV1IieayG2y7SaBul3wMj7RPWOmNNwR3GGZjSEJNjHy5HM6PVkDIu--h80tVvqcNEkV-6gwZXRD1LU13BvIIscBKGVDS7v_hoYiQhq7jnuuELPxndddPnPY-wKUDEDclTjloHun4DILnPyXsNF4vdnl8r2gsJBcKsUZjE3pi3oraC9W841Nt2g7WVDjgl5hkTur8eoqISgZ6dYt92cGevVQjfQogJE"
-              alt="Elena Yoga practice"
-              className="h-179 w-full rounded-xl object-cover shadow-editorial"
-            />
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAvNCcNSVW4W3gj-IP-PaX66C39pvtyMoo-NYyep6pImVDzPV1IieayG2y7SaBul3wMj7RPWOmNNwR3GGZjSEJNjHy5HM6PVkDIu--h80tVvqcNEkV-6gwZXRD1LU13BvIIscBKGVDS7v_hoYiQhq7jnuuELPxndddPnPY-wKUDEDclTjloHun4DILnPyXsNF4vdnl8r2gsJBcKsUZjE3pi3oraC9W841Nt2g7WVDjgl5hkTur8eoqISgZ6dYt92cGevVQjfQogJE"
+              alt="Yoga practice"
+              className="h-179 w-full rounded-xl object-cover shadow-editorial"/>
           </div>
   
-          <div className="absolute bg-white z-20 mt-[-10vh] md:col-span-5 md:-ml-32 md:mt-0">
+          <div className="absolute bg-white z-20">
             <div className="inline-block bg-surface-container-lowest p-10 shadow-editorial md:p-16">
               <h2 className="uppercase tracking-[0.2em] text-text-muted">
                 PROF. JORGELINA CANTONE

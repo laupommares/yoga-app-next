@@ -37,7 +37,7 @@ const bookings = [
   
             <div className="flex items-center gap-4 text-sm uppercase tracking-widest text-on-surface-variant">
               <span className="text-primary">✉️</span>
-              hello@elenayoga.com
+              hello@gmail.com
             </div>
           </div>
   
