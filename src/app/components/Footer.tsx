@@ -14,9 +14,9 @@ export default function Footer() {
     <footer className="w-full bg-stone-100 pt-16 pb-10">
       <div className="container mx-auto max-w-screen-2xl px-8">
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-12">
 
-          <div className="flex flex-col justify-center gap-4">
+          <div className="flex flex-col justify-center max-lg:items-center gap-4">
             <Image src="/logo.svg"
               alt="Yoga con Jori"
               width={110}
@@ -73,7 +73,8 @@ export default function Footer() {
               </li>
 
               <li>
-                <a href="https://wa.me/5492346566187"
+                <a
+                  href="https://wa.me/5492346566187?text=Hola!%20%C2%BFQu%C3%A9%20tal%3F%20Quisiera%20consultar%20por%20las%20clases%20%F0%9F%99%82"
                   className="flex items-center gap-3 hover:text-primary transition">
                   <IoLogoWhatsapp className="w-4 h-4 shrink-0" />
                   <span>Escribime por WhatsApp</span>

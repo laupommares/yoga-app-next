@@ -8,7 +8,7 @@ export default function HeroSection() {
               className="h-179 w-full rounded-xl object-cover shadow-editorial"/>
           </div>
   
-          <div className="absolute bg-white z-20">
+          <div className="absolute bg-stone-50/80 backdrop-blur-xl z-20 rounded-xl">
             <div className="inline-block bg-surface-container-lowest shadow-editorial p-6 md:p-10">
               <h2 className="uppercase tracking-[0.2em] text-text-muted">
                 PROF. JORGELINA CANTONE
