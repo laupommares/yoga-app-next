@@ -1,6 +1,6 @@
 export default function TestimonialSection() {
     return (
-      <section className="bg-surface py-40">
+      <section className="bg-surface py-16">
         <div className="relative mx-auto max-w-5xl px-8 text-center">
 
           <blockquote className="font-headline text-4xl font-light italic leading-tight text-on-surface md:text-6xl">

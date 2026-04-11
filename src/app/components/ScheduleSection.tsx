@@ -97,7 +97,7 @@ export default function ScheduleSection() {
                 </div>
 
                 {/* CTA */}
-                <div className="mt-20 text-center">
+                <div className="mt-8 text-center">
                     <a href="#"
                         className="inline-flex items-center gap-3 px-8 py-3 border border-primary text-primary text-[11px] uppercase tracking-[0.15em] hover:bg-primary hover:text-on-primary transition-all duration-300">
                         Solicitar por WhatsApp

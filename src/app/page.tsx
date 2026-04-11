@@ -16,9 +16,10 @@ export default function HomePage() {
       <main className="pt-24">
         <HeroSection />
         <AboutSection />
+        <ScheduleSection />
+
         <ClassesSection />
         <TestimonialSection />
-        <ScheduleSection />
         <BookingSection />
       </main>
       <Footer />
