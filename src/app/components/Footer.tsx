@@ -14,25 +14,20 @@ export default function Footer() {
     <footer className="w-full bg-stone-100 pt-16 pb-10">
       <div className="container mx-auto max-w-screen-2xl px-8">
 
-        {/* GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
 
-          {/* Marca */}
-          <div className="flex flex-col gap-4">
-            <Image
-              src="/logo.svg"
+          <div className="flex flex-col justify-center gap-4">
+            <Image src="/logo.svg"
               alt="Yoga con Jori"
               width={110}
-              height={32}
-            />
+              height={32}/>
 
-            <p className="text-xs text-stone-500 font-light leading-relaxed max-w-[220px]">
+            <p className="text-xs text-stone-500 font-light leading-relaxed max-w-55">
               © 2026 Jorgelina Cantone <br />
               Presencia en movimiento
             </p>
           </div>
 
-          {/* Navegación */}
           <div className="flex flex-col gap-4">
             <ul className="space-y-3 text-sm text-stone-600 font-light">
 
@@ -74,7 +69,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contacto */}
           <div className="flex flex-col gap-4">
             <h4 className="text-xs uppercase tracking-[0.15em] text-stone-400">
               ContactoR
@@ -83,42 +77,34 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-stone-600 font-light">
 
               <li>
-                <a
-                  href="https://maps.google.com/?q=Pringles+36+Chivilcoy"
+                <a href="https://maps.google.com/?q=Pringles+36+Chivilcoy"
                   target="_blank"
-                  className="flex items-center gap-3 hover:text-primary transition"
-                >
+                  className="flex items-center gap-3 hover:text-primary transition">
                   <SiGooglemaps className="w-4 h-4 shrink-0" />
                   <span>Chivilcoy, Buenos Aires</span>
                 </a>
               </li>
 
               <li>
-                <a
-                  href="https://wa.me/5492346566187"
-                  className="flex items-center gap-3 hover:text-primary transition"
-                >
+                <a href="https://wa.me/5492346566187"
+                  className="flex items-center gap-3 hover:text-primary transition">
                   <IoLogoWhatsapp className="w-4 h-4 shrink-0" />
                   <span>Escribime por WhatsApp</span>
                 </a>
               </li>
 
               <li>
-                <a
-                  href="https://instagram.com/joricantone.yoga"
+                <a href="https://instagram.com/joricantone.yoga"
                   target="_blank"
-                  className="flex items-center gap-3 hover:text-primary transition"
-                >
+                  className="flex items-center gap-3 hover:text-primary transition">
                   <BiLogoInstagramAlt className="w-4 h-4 shrink-0" />
                   <span>@joricantone.yoga</span>
                 </a>
               </li>
 
               <li>
-                <a
-                  href="https://tiktok.com/@tuusuario"
-                  className="flex items-center gap-3 hover:text-primary transition"
-                >
+                <a href="https://tiktok.com/@tuusuario"
+                  className="flex items-center gap-3 hover:text-primary transition">
                   <AiFillTikTok className="w-4 h-4 shrink-0" />
                   <span>@tuusuario</span>
                 </a>
