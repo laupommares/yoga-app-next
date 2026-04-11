@@ -19,6 +19,10 @@ export default function Navbar() {
             href="#about">
             Mi filosofía
           </a>
+          <a className="text-xs tracking-[0.12em] text-text-muted hover:text-earth hover:font-medium hover:border-b hover:border-primary/30"
+            href="#booking">
+            Precios
+          </a>
           <a className="text-xs tracking-[0.12em] transition-colors text-text-muted hover:text-earth hover:font-medium hover:border-b hover:border-primary/30"
             href="#schedule">
             Horarios
@@ -26,10 +30,6 @@ export default function Navbar() {
           <a className="text-xs tracking-[0.12em] text-text-muted hover:text-earth hover:font-medium hover:border-b hover:border-primary/30"
             href="#practices">
             Propuestas
-          </a>
-          <a className="text-xs tracking-[0.12em] text-text-muted hover:text-earth hover:font-medium hover:border-b hover:border-primary/30"
-            href="#booking">
-            Precios
           </a>
         </div>
 

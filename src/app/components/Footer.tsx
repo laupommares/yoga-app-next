@@ -20,7 +20,7 @@ export default function Footer() {
             <Image src="/logo.svg"
               alt="Yoga con Jori"
               width={110}
-              height={32}/>
+              height={32} />
 
             <p className="text-xs text-stone-500 font-light leading-relaxed max-w-55">
               © 2026 Jorgelina Cantone <br />
@@ -29,49 +29,36 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <ul className="space-y-3 text-sm text-stone-600 font-light">
+            <ul className="space-y-3 text-sm text-text-secondary font-light">
 
-              <li>
-                <a href="#home" className="flex items-center gap-2 hover:text-primary transition">
-                  <HiOutlineHome className="w-4 h-4" />
-                  <span>Inicio</span>
-                </a>
-              </li>
+              {[
+                { href: "#home", label: "Inicio" },
+                { href: "#about", label: "Mi filosofía" },
+                { href: "#booking", label: "Precios" },
+                { href: "#schedule", label: "Horarios" },
+                { href: "#practices", label: "Propuestas" },
+              ].map((item) => (
+                <li key={item.href} className="group">
+                  <a href={item.href}
+                    className="flex items-center gap-2 transition hover:text-primary">
+                    <span className="text-primary/50 transition-transform duration-300 group-hover:translate-x-1">
+                      ›
+                    </span>
 
-              <li>
-                <a href="#about" className="flex items-center gap-2 hover:text-primary transition">
-                  <LuFlower2 className="w-4 h-4" />
-                  <span>Mi filosofía</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="#schedule" className="flex items-center gap-2 hover:text-primary transition">
-                  <LuCalendar className="w-4 h-4" />
-                  <span>Horarios</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="#practices" className="flex items-center gap-2 hover:text-primary transition">
-                  <LuHeartHandshake className="w-4 h-4" />
-                  <span>Propuestas</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="#booking" className="flex items-center gap-2 hover:text-primary transition">
-                  <LuBadgeDollarSign className="w-4 h-4" />
-                  <span>Precios</span>
-                </a>
-              </li>
+                    <span className="relative">
+                      {item.label}
+                      <span className="absolute left-0 -bottom-1 w-0 h-px bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </span>
+                  </a>
+                </li>
+              ))}
 
             </ul>
           </div>
 
           <div className="flex flex-col gap-4">
             <h4 className="text-xs uppercase tracking-[0.15em] text-stone-400">
-              ContactoR
+              Contacto
             </h4>
 
             <ul className="space-y-3 text-sm text-stone-600 font-light">

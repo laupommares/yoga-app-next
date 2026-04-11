@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <main className="pt-24">
+      <main className="pt-18">
         <HeroSection />
         <AboutSection />
         <BookingSection />
