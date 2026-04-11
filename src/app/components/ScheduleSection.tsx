@@ -1,109 +1,146 @@
 "use client";
 
+import { useState } from "react";
+
 type Slot = {
-    time: string;
-    name: string;
+  time: string;
+  name: string;
+  disabled?: boolean;
 };
 
 type DaySchedule = {
-    day: string;
-    slots: Slot[];
+  day: string;
+  slots: Slot[];
 };
 
-const schedule: DaySchedule[] = [
-    {
-        day: "Lunes",
-        slots: [
-            { time: "19:00 — 20:00", name: "Ashtanga Vinhasa Yoga" },
-            { time: "20:30 — 21:30", name: "Yoga Ayurveda" },
-        ],
-    },
-    {
-        day: "Martes",
-        slots: [
-            { time: "14:00 — 15:00", name: "Yoga Ayurveda" },
-            { time: "20:30 — 21:30", name: "Yoga Ayurveda" },
-        ],
-    },
-    {
-        day: "Miércoles",
-        slots: [
-            { time: "19:00 — 20:00", name: "Ashtanga Vinhasa Yoga" },
-        ],
-    },
-    {
-        day: "Jueves",
-        slots: [
-            { time: "14:00 — 15:00", name: "Ashtanga Vinhasa Yoga" },
-            { time: "19:00 — 20:00", name: "Yoga para embarazadas" },
-            { time: "20:30 — 21:30", name: "Yoga Ayurveda" },
-        ],
-    },
-];
-
 export default function ScheduleSection() {
-    return (
-        <section id="schedule" className="py-24 bg-surface-container-low">
-            <div className="max-w-7xl mx-auto px-6">
+  const [selected, setSelected] = useState<string[]>([]);
 
-                {/* Header */}
-                <div className="text-center space-y-3 mb-16">
-                    <span className="uppercase text-[11px] tracking-[0.15em] text-primary/60">
-                        El ritmo de la práctica
-                    </span>
-                    <h2 className="text-3xl md:text-4xl font-light italic">
-                        Horarios semanales
-                    </h2>
-                </div>
+  const toggleSlot = (value: string, disabled?: boolean) => {
+    if (disabled) return;
 
-                {/* Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-12 md:gap-y-0">
-                    {schedule.map((day, index) => (
-                        <div
-                            key={day.day}
-                            className={`px-4 space-y-8 ${index !== schedule.length - 1
-                                    ? "border-r border-stone-200/40"
-                                    : ""
-                                }`}
-                        >
-                            {/* Day */}
-                            <h4 className="text-lg italic border-b border-primary/20 pb-3">
-                                {day.day}
-                            </h4>
-
-                            {/* Slots */}
-                            <div className="space-y-8">
-                                {day.slots.map((slot, i) => (
-                                    <button
-                                        key={i}
-                                        className="group w-full text-left transition-all"
-                                    >
-                                        <p className="text-[11px] tracking-widest text-primary/70 uppercase">
-                                            {slot.time}
-                                        </p>
-
-                                        <p className="text-sm mt-1">
-                                            {slot.name}
-                                        </p>
-
-                                        <span className="block mt-2 text-[10px] uppercase tracking-tight text-primary opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
-                                            Seleccionar
-                                        </span>
-                                    </button>
-                                ))}
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-                {/* CTA */}
-                <div className="mt-8 text-center">
-                    <a href="#"
-                        className="inline-flex items-center gap-3 px-8 py-3 border border-primary text-primary text-[11px] uppercase tracking-[0.15em] hover:bg-primary hover:text-on-primary transition-all duration-300">
-                        Solicitar por WhatsApp
-                    </a>
-                </div>
-            </div>
-        </section>
+    setSelected((prev) =>
+      prev.includes(value)
+        ? prev.filter((v) => v !== value)
+        : [...prev, value]
     );
+  };
+
+  const schedule: DaySchedule[] = [
+    {
+      day: "Lunes",
+      slots: [
+        { time: "19:00 — 20:00", name: "Ashtanga Vinhasa Yoga" },
+        { time: "20:30 — 21:30", name: "Yoga Ayurveda" },
+      ],
+    },
+    {
+      day: "Martes",
+      slots: [
+        { time: "14:00 — 15:00", name: "Yoga Ayurveda" },
+        { time: "20:30 — 21:30", name: "Yoga Ayurveda", disabled: true },
+      ],
+    },
+    {
+      day: "Miércoles",
+      slots: [
+        { time: "19:00 — 20:00", name: "Ashtanga Vinhasa Yoga" },
+      ],
+    },
+    {
+      day: "Jueves",
+      slots: [
+        { time: "14:00 — 15:00", name: "Ashtanga Vinhasa Yoga" },
+        { time: "19:00 — 20:00", name: "Yoga para embarazadas" },
+        { time: "20:30 — 21:30", name: "Yoga Ayurveda", disabled: true },
+      ],
+    },
+  ];
+
+  const message = encodeURIComponent(
+    `Hola! Me gustaría reservar las siguientes clases:\n\n${selected.join("\n")}`
+  );
+
+  return (
+    <section id="schedule" className="py-16 bg-surface-container-low">
+      <div className="max-w-5xl mx-auto px-6">
+
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-light">
+            Horarios semanales
+          </h2>
+        </div>
+
+        {/* Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {schedule.map((day) => (
+            <div key={day.day} className="space-y-4">
+
+              <h4 className="text-sm uppercase tracking-wide text-stone-400">
+                {day.day}
+              </h4>
+
+              <div className="space-y-3">
+                {day.slots.map((slot, i) => {
+                  const value = `${day.day} ${slot.time} - ${slot.name}`;
+                  const isActive = selected.includes(value);
+
+                  return (
+                    <button
+                      key={i}
+                      onClick={() => !slot.disabled && toggleSlot(value)}
+                      className={`w-full text-left p-3 rounded-lg border transition-all duration-200
+
+                        ${
+                          slot.disabled
+                            ? "bg-earth-soft border-transparent text-text-muted cursor-default"
+                            : isActive
+                            ? "border-primary bg-primary/10"
+                            : "border-stone-200 hover:border-primary/40 hover:bg-earth-soft/40"
+                        }
+                      `}
+                    >
+                      <p className="text-[11px] uppercase">
+                        {slot.time}
+                      </p>
+
+                      <p className="text-sm mt-1">
+                        {slot.name}
+                      </p>
+
+                      {slot.disabled && (
+                        <span className="text-[10px] uppercase text-stone-400 mt-1 block">
+                          Completo
+                        </span>
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div className="mt-10 text-center">
+          <a
+            href={`https://wa.me/5492346566187?text=${message}`}
+            className={`inline-block px-8 py-2.5 border text-[11px] uppercase tracking-[0.15em] transition
+              ${
+                selected.length
+                  ? "border-primary text-primary hover:bg-primary hover:text-white"
+                  : "border-stone-300 text-stone-400 pointer-events-none"
+              }
+            `}
+          >
+            {selected.length
+              ? `Reservar (${selected.length})`
+              : "Seleccioná un horario"}
+          </a>
+        </div>
+
+      </div>
+    </section>
+  );
 }

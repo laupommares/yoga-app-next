@@ -73,10 +73,8 @@ export default function BookingSection() {
 
         {/* CTA */}
         <div className="mt-10 text-center">
-          <a
-            href="#"
-            className="inline-block px-8 py-2.5 border border-primary text-primary text-[11px] uppercase tracking-[0.15em] hover:bg-primary hover:text-on-primary transition-all duration-300"
-          >
+          <a href="#schedule"
+            className="inline-block px-8 py-2.5 border border-primary text-primary text-[11px] uppercase tracking-[0.15em] hover:bg-primary hover:text-on-primary transition-all duration-300">
             Reservar por WhatsApp
           </a>
         </div>

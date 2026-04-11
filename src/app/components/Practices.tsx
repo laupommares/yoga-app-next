@@ -1,4 +1,5 @@
-const classes = [
+export default function Practices() {
+  const classes = [
     {
       title: "Ashtanga Yoga",
       duration: "60min",
@@ -44,87 +45,63 @@ const classes = [
       italic: false,
     },
   ];
-  
-  export default function Practices() {
-    return (
-      <section id="practices" className="px-8 py-32 md:px-24">
-        <div className="mx-auto max-w-4xl">
-          <div className="mb-24 text-center">
-            <p className="text-xs uppercase tracking-[0.2em] text-outline">
-                MI S PROPUESTAS
-            </p>
-            <h2 className="font-headline mb-4 text-5xl text-on-surface md:text-6xl">
-              Prácticas <span className="italic text-primary">con Intención</span>
-            </h2>
-          </div>
-  
-          <div className="space-y-32">
-            {classes.map((item) => (
-              <div
-                key={item.title}
-                className={`group flex flex-col items-center gap-12 md:flex-row ${
-                  item.reverse ? "md:flex-row" : ""
-                }`}
-              >
-                {item.reverse ? (
-                  <>
-                    <div className="w-full overflow-hidden rounded-xl aspect-video md:w-1/2 md:aspect-square">
-                      <img
-                        src={item.image}
-                        alt={item.title}
-                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      />
-                    </div>
-  
-                    <div className="w-full md:w-1/2">
-                      <h3
-                        className={`font-headline mb-4 text-4xl ${
-                          item.italic ? "italic text-secondary" : ""
-                        }`}
-                      >
-                        {item.title}
-                        <span className="ml-4 font-body text-2xl font-light text-outline">
-                          / {item.duration}
-                        </span>
-                      </h3>
-                      <p className="mb-6 text-lg leading-relaxed text-on-surface-variant">
-                        {item.description}
-                      </p>
-                      <span className="text-xs font-bold uppercase tracking-widest text-primary">
-                        {item.schedule}
-                      </span>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div className="order-2 w-full md:order-1 md:w-1/2">
-                      <h3 className="font-headline mb-4 text-4xl">
-                        {item.title}
-                        <span className="ml-4 font-body text-2xl font-light text-outline">
-                          / {item.duration}
-                        </span>
-                      </h3>
-                      <p className="mb-6 text-lg leading-relaxed text-on-surface-variant">
-                        {item.description}
-                      </p>
-                      <span className="text-xs font-bold uppercase tracking-widest text-primary">
-                        {item.schedule}
-                      </span>
-                    </div>
-  
-                    <div className="order-1 w-full overflow-hidden rounded-xl aspect-video md:order-2 md:w-1/2 md:aspect-square">
-                      <img
-                        src={item.image}
-                        alt={item.title}
-                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      />
-                    </div>
-                  </>
-                )}
-              </div>
-            ))}
-          </div>
+
+  return (
+    <section id="practices" className="py-16 px-6 md:px-12">
+      <div className="mx-auto max-w-5xl">
+
+        <div className="mb-12 text-center">
+          <p className="text-[11px] uppercase tracking-[0.15em] text-text-muted">
+            MIS PROPUESTAS
+          </p>
+
+          <h2 className="font-headline text-2xl md:text-3xl text-text-primary">
+            Prácticas <span className="italic text-primary">con Intención</span>
+          </h2>
         </div>
-      </section>
-    );
-  }
+
+        <div className="space-y-16">
+          {classes.map((item) => (
+            <div key={item.title}
+              className={`flex flex-col gap-6 md:flex-row md:items-center ${
+                item.reverse ? "md:flex-row-reverse" : ""
+              }`}>
+
+              <div className="w-full md:w-1/2">
+                <div className="overflow-hidden rounded-xl aspect-4/3">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"/>
+                </div>
+              </div>
+
+              <div className="w-full md:w-1/2">
+
+                <h3 className={`font-headline mb-3 text-xl md:text-2xl ${
+                    item.italic ? "italic text-text-secondary" : "text-text-primary"
+                  }`}>
+                  {item.title}
+                  <span className="ml-2 text-sm font-light text-text-muted">
+                    / {item.duration}
+                  </span>
+                </h3>
+
+                <p className="mb-4 text-sm leading-relaxed text-text-secondary">
+                  {item.description}
+                </p>
+
+                <span className="text-[11px] uppercase tracking-[0.12em] text-primary">
+                  {item.schedule}
+                </span>
+
+              </div>
+
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  );
+}
