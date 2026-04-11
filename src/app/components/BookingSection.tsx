@@ -25,33 +25,33 @@ const plans = [
 
 export default function BookingSection() {
   return (
-    <section id="booking" className="py-24 bg-surface">
-      <div className="max-w-3xl mx-auto px-6">
+    <section id="booking" className="py-16 bg-surface">
+      <div className="max-w-2xl mx-auto px-6">
 
         {/* Header */}
-        <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl font-light">
-            Inversión en tu Bienestar
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-light">
+            Inversión en tu bienestar
           </h2>
         </div>
 
         {/* Lista */}
-        <div className="space-y-12">
+        <div className="divide-y divide-stone-200/50">
           {plans.map((plan) => (
             <div
               key={plan.title}
-              className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-4 border-b border-stone-200/50 pb-6"
+              className="flex items-center justify-between py-5"
             >
               <div>
-                <h4 className="text-lg md:text-xl font-light mb-1">
+                <h4 className="text-base md:text-lg font-light">
                   {plan.title}
                 </h4>
-                <p className="text-sm text-on-surface-variant font-light">
+                <p className="text-xs text-on-surface-variant font-light">
                   {plan.description}
                 </p>
               </div>
 
-              <span className="text-2xl md:text-3xl font-light text-primary">
+              <span className="text-xl md:text-2xl font-light text-primary whitespace-nowrap">
                 {plan.price}
               </span>
             </div>
@@ -59,23 +59,24 @@ export default function BookingSection() {
         </div>
 
         {/* Info extra */}
-        <div className="mt-16 space-y-6 text-sm text-on-surface-variant font-light leading-relaxed">
-
+        <div className="mt-10 space-y-3 text-xs text-on-surface-variant font-light leading-relaxed text-center max-w-md mx-auto">
           <p>
             Podés combinar horarios y estilos según tu disponibilidad.
-            (Martes y jueves 20:30 actualmente completo)
           </p>
-          <p>Clases presenciales grupales en Chivilcoy de abril a agosto </p>
-       
+          <p>
+            Clases presenciales grupales en Chivilcoy (abril a agosto)
+          </p>
           <p className="italic">
             Cualquier consulta, estoy a disposición ✨
           </p>
         </div>
 
         {/* CTA */}
-        <div className="mt-16 text-center">
-          <a href="#"
-            className="inline-block px-10 py-3 border border-primary text-primary text-[11px] uppercase tracking-[0.15em] hover:bg-primary hover:text-on-primary transition-all duration-300">
+        <div className="mt-10 text-center">
+          <a
+            href="#"
+            className="inline-block px-8 py-2.5 border border-primary text-primary text-[11px] uppercase tracking-[0.15em] hover:bg-primary hover:text-on-primary transition-all duration-300"
+          >
             Reservar por WhatsApp
           </a>
         </div>
