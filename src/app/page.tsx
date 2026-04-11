@@ -5,6 +5,7 @@ import ClassesSection from "./components/ClassesSection";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
+import ScheduleSection from "./components/ScheduleSection";
 import TestimonialSection from "./components/TestimonialSection";
 
 
@@ -17,6 +18,7 @@ export default function HomePage() {
         <AboutSection />
         <ClassesSection />
         <TestimonialSection />
+        <ScheduleSection />
         <BookingSection />
       </main>
       <Footer />

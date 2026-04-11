@@ -1,72 +1,85 @@
-const bookings = [
-    {
-      time: "Monday, 08:30 AM",
-      title: "Grounding Hatha",
-    },
-    {
-      time: "Tuesday, 06:00 PM",
-      title: "Evening Vinyasa",
-    },
-    {
-      time: "Friday, 07:30 PM",
-      title: "Sunset Restore",
-    },
-  ];
-  
-  export default function BookingSection() {
-    return (
-      <section
-        id="booking"
-        className="bg-surface-container px-8 py-32 md:px-24"
-      >
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-16 md:grid-cols-12">
-          <div className="md:col-span-5">
-            <h2 className="font-headline mb-6 text-5xl text-on-surface">
-              Reservá tu <span className="italic">Mat</span>
-            </h2>
-  
-            <p className="mb-12 text-lg text-on-surface-variant">
-              Disponibilidad limitada para garantizar una experiencia íntima y personalizada
-              para cada profesional.
-            </p>
-  
-            <div className="mb-4 flex items-center gap-4 text-sm uppercase tracking-widest text-on-surface-variant">
-              <span className="text-primary">📍</span>
-              Carrer de Mallorca, 234. Barcelona
-            </div>
-  
-            <div className="flex items-center gap-4 text-sm uppercase tracking-widest text-on-surface-variant">
-              <span className="text-primary">✉️</span>
-              hello@gmail.com
-            </div>
-          </div>
-  
-          <div className="md:col-span-7">
-            <div className="overflow-hidden rounded-lg bg-surface-container-lowest shadow-editorial">
-              <div className="divide-y divide-outline-variant/10">
-                {bookings.map((booking) => (
-                  <div
-                    key={booking.title}
-                    className="group flex flex-col items-start justify-between gap-6 p-8 transition-colors hover:bg-surface-container-low sm:flex-row sm:items-center"
-                  >
-                    <div>
-                      <span className="mb-1 block text-[10px] uppercase tracking-widest text-tertiary">
-                        {booking.time}
-                      </span>
-                      <h4 className="font-headline text-2xl transition-all group-hover:italic">
-                        {booking.title}
-                      </h4>
-                    </div>
-  
-                    <button className="bg-primary px-8 py-3 text-xs uppercase tracking-[0.2em] text-on-primary transition-all hover:opacity-90">
-                      Select
-                    </button>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+"use client";
+
+const plans = [
+  {
+    title: "Clase suelta",
+    description: "Práctica libre, sin compromiso",
+    price: "$10.000",
+  },
+  {
+    title: "1 vez por semana",
+    description: "Intercambio y constancia",
+    price: "$28.000",
+  },
+  {
+    title: "2 veces por semana",
+    description: "Equilibrio y continuidad",
+    price: "$32.000",
+  },
+  {
+    title: "3 veces por semana",
+    description: "Profundizar tu práctica",
+    price: "$38.000",
+  },
+];
+
+export default function BookingSection() {
+  return (
+    <section id="clases" className="py-24 bg-surface">
+      <div className="max-w-3xl mx-auto px-6">
+
+        {/* Header */}
+        <div className="text-center mb-20">
+          <h2 className="text-3xl md:text-4xl font-light">
+            Inversión en tu Bienestar
+          </h2>
         </div>
-      </section>
-    );
-  }
+
+        {/* Lista */}
+        <div className="space-y-12">
+          {plans.map((plan) => (
+            <div
+              key={plan.title}
+              className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-4 border-b border-stone-200/50 pb-6"
+            >
+              <div>
+                <h4 className="text-lg md:text-xl font-light mb-1">
+                  {plan.title}
+                </h4>
+                <p className="text-sm text-on-surface-variant font-light">
+                  {plan.description}
+                </p>
+              </div>
+
+              <span className="text-2xl md:text-3xl font-light text-primary">
+                {plan.price}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {/* Info extra */}
+        <div className="mt-16 space-y-6 text-sm text-on-surface-variant font-light leading-relaxed">
+
+          <p>
+            Podés combinar horarios y estilos según tu disponibilidad.
+            (Martes y jueves 20:30 actualmente completo)
+          </p>
+          <p>Clases presenciales grupales en Chivilcoy de abril a agosto </p>
+       
+          <p className="italic">
+            Cualquier consulta, estoy a disposición ✨
+          </p>
+        </div>
+
+        {/* CTA */}
+        <div className="mt-16 text-center">
+          <a href="#"
+            className="inline-block px-10 py-3 border border-primary text-primary text-[11px] uppercase tracking-[0.15em] hover:bg-primary hover:text-on-primary transition-all duration-300">
+            Reservar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
