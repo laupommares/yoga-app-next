@@ -91,9 +91,9 @@ export default function Practices() {
                   {item.description}
                 </p>
 
-                <span className="text-[11px] uppercase tracking-[0.12em] text-primary">
+                <a href="#schedule" className="text-[11px] uppercase tracking-[0.12em] text-primary">
                   {item.schedule}
-                </span>
+                </a>
 
               </div>
 
