@@ -1,6 +1,6 @@
 export default function HeroSection() {
     return (
-      <section className="relative mb-32 flex min-h-[90vh] flex-col justify-center overflow-hidden px-8 md:px-24">
+      <section id="home" className="relative mb-32 flex min-h-[90vh] flex-col justify-center overflow-hidden px-8 md:px-24">
         <div className="grid h-full grid-cols-12 items-center gap-4">
           <div className="relative z-10 col-span-12 md:col-span-8 md:translate-x-110">
             <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAvNCcNSVW4W3gj-IP-PaX66C39pvtyMoo-NYyep6pImVDzPV1IieayG2y7SaBul3wMj7RPWOmNNwR3GGZjSEJNjHy5HM6PVkDIu--h80tVvqcNEkV-6gwZXRD1LU13BvIIscBKGVDS7v_hoYiQhq7jnuuELPxndddPnPY-wKUDEDclTjloHun4DILnPyXsNF4vdnl8r2gsJBcKsUZjE3pi3oraC9W841Nt2g7WVDjgl5hkTur8eoqISgZ6dYt92cGevVQjfQogJE"

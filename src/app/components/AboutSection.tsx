@@ -1,6 +1,6 @@
 export default function AboutSection() {
   return (
-    <section className="bg-surface-container-low px-8 py-24 md:px-24">
+    <section id="about" className="bg-surface-container-low px-8 py-24 md:px-24">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col items-center gap-16 md:flex-row md:gap-32">
           <div className="relative w-full md:w-1/2">

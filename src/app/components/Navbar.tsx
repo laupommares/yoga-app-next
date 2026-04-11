@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -11,22 +12,26 @@ export default function Navbar() {
         height={35}/>
 
         <div className="hidden text-sm items-center gap-12 md:flex">
-          <a className="text-xs tracking-[0.12em] transition-colors text-text-muted hover:text-earth hover:font-medium hover:border-b hover:border-primary/30"
-            href="#">
+          <Link className="text-xs tracking-[0.12em] transition-colors text-text-muted hover:text-earth hover:font-medium hover:border-b hover:border-primary/30"
+            href="#home">
             Inicio
-          </a>
-          <a className="text-xs tracking-[0.12em] transition-colors text-text-muted hover:text-earth hover:font-medium hover:border-b hover:border-primary/30"
-            href="#">
-            Clases
-          </a>
-          <a className="text-xs tracking-[0.12em] transition-colors text-text-muted hover:text-earth hover:font-medium hover:border-b hover:border-primary/30"
-            href="#">
+          </Link>
+          <Link className="text-xs tracking-[0.12em] transition-colors text-text-muted hover:text-earth hover:font-medium hover:border-b hover:border-primary/30"
+            href="#about">
             Mi filosofía
-          </a>
-          <a className="text-xs tracking-[0.12em] text-text-muted hover:text-earth hover:font-medium hover:border-b hover:border-primary/30"
-            href="#">
+          </Link>
+          <Link className="text-xs tracking-[0.12em] transition-colors text-text-muted hover:text-earth hover:font-medium hover:border-b hover:border-primary/30"
+            href="#schedule">
+            Horarios
+          </Link>
+          <Link className="text-xs tracking-[0.12em] text-text-muted hover:text-earth hover:font-medium hover:border-b hover:border-primary/30"
+            href="#practices">
             Propuestas
-          </a>
+          </Link>
+          <Link className="text-xs tracking-[0.12em] text-text-muted hover:text-earth hover:font-medium hover:border-b hover:border-primary/30"
+            href="#booking">
+            Precios
+          </Link>
         </div>
 
         <button className="bg-primary px-6 py-3 text-xs uppercase tracking-[0.2em] text-on-primary transition-all duration-300 hover:opacity-90 active:scale-95">

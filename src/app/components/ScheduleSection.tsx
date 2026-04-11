@@ -43,7 +43,7 @@ const schedule: DaySchedule[] = [
 
 export default function ScheduleSection() {
     return (
-        <section className="py-24 bg-surface-container-low" id="horarios">
+        <section id="schedule" className="py-24 bg-surface-container-low">
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* Header */}

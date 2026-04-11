@@ -45,9 +45,9 @@ const classes = [
     },
   ];
   
-  export default function ClassesSection() {
+  export default function Practices() {
     return (
-      <section className="px-8 py-32 md:px-24">
+      <section id="practices" className="px-8 py-32 md:px-24">
         <div className="mx-auto max-w-4xl">
           <div className="mb-24 text-center">
             <p className="text-xs uppercase tracking-[0.2em] text-outline">

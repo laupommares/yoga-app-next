@@ -1,12 +1,12 @@
 
 import AboutSection from "./components/AboutSection";
 import BookingSection from "./components/BookingSection";
-import ClassesSection from "./components/ClassesSection";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import ScheduleSection from "./components/ScheduleSection";
 import TestimonialSection from "./components/TestimonialSection";
+import Practices from "./components/Practices";
 
 
 export default function HomePage() {
@@ -17,8 +17,7 @@ export default function HomePage() {
         <HeroSection />
         <AboutSection />
         <ScheduleSection />
-
-        <ClassesSection />
+        <Practices />
         <TestimonialSection />
         <BookingSection />
       </main>
