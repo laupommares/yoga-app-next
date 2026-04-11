@@ -5,18 +5,14 @@ export default function AboutSection() {
 
         <div className="grid md:grid-cols-2 gap-10 items-center">
 
-          {/* Imagen */}
           <div className="w-full">
             <img
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBqsxIAjqZ8hF0ofrRfDL5-l28R2aOe9kGxmwi2tDKxkSZF9-wtuncG45MCJkxARjT8eFgiXrY2v6LoevtBTVABgrgmGdS01z31CTdMTP1Y-w3Hq5IwOfmmWQerx1lpXTuwqQ7OKP7gV8zOSGuENN9_MwxX76-k9hX31brZa8jH3G4I_KEEgqmFl257POs9JdV7LDdJpAqkERUmPsAszO1iuq76uCF2ayWgXPd94JtHbtG6riHL7aHdzJxD8zH26dETelEOVc8Z-M"
               alt="Jori Yoga"
-              className="w-full h-[420px] object-cover rounded-xl"
+              className="w-full h-105 object-cover rounded-xl"
             />
           </div>
-
-          {/* Texto */}
           <div>
-
             <span className="block text-xs uppercase tracking-[0.15em] text-stone-400 mb-4">
               Mi filosofía
             </span>
@@ -59,10 +55,8 @@ export default function AboutSection() {
 
             {/* CTA */}
             <div className="mt-8">
-              <a
-                href="#booking"
-                className="text-xs uppercase tracking-[0.15em] text-primary hover:opacity-70 transition"
-              >
+              <a href="#schedule"
+                className="text-xs uppercase tracking-[0.15em] text-primary hover:opacity-70 transition">
                 Reservar una clase
               </a>
             </div>
