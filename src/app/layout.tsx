@@ -15,7 +15,7 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
-  title: "Elena Yoga",
+  title: "Jorgelina Cantone Yoga",
   description: "Yoga, breath, and mindful movement.",
 };
 
@@ -26,7 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${inter.variable} ${newsreader.variable} font-body`}>
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+      </head>
+      <body className={`${inter.variable} ${newsreader.variable}`}>
         {children}
       </body>
     </html>
