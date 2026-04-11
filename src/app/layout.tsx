@@ -15,8 +15,8 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
-  title: "Jorgelina Cantone Yoga",
-  description: "Yoga, breath, and mindful movement.",
+  title: "Jori cantone Yoga",
+  description: "Yoga, respiración y movimiento consciente.",
 };
 
 export default function RootLayout({
