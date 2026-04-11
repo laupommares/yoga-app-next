@@ -1,9 +1,9 @@
 const classes = [
     {
       title: "Ashtanga Yoga",
-      duration: "75min",
+      duration: "60min",
       description:
-        "Una meditación en movimiento. A través de la respiración consciente y secuencias de posturas,cpurificamos el sistema nervioso y cultivamos una concentración inquebrantable.",
+        "Una meditación en movimiento. A través de la respiración consciente y secuencias de posturas, purificamos el sistema nervioso y cultivamos una concentración inquebrantable.",
       schedule: "CADA LUNES & MIÈRCOLES",
       image:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuD6efkfs0DFLV5Wzf2VNNXXoSmfo_-qS4cLHBoO4TXvHrQKLhC7jNyw9KwNtmtPRGmb2rEJzZGbTRki391KAjD56-dHEJKLj6GHSpquDeTmQ_aNo8aB9_l56QfOmroxVt6LDeJJFskFKbBeiRLQzMIwkWkC8CrPYIjzKbAM9bl1xo4-ujHwt0mcWplse4x1XiZ0iWxI4ni3oD3QQxRvbaPLRq8xpN5EHGNVBx0J0LmaBU3pbuXbZoEM7IbkLDOjlvZu7jw-NqWfj84",
