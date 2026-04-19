@@ -61,10 +61,7 @@ export default function BookingSection() {
         {/* Info extra */}
         <div className="mt-10 space-y-3 text-xs text-on-surface-variant font-light leading-relaxed text-center max-w-md mx-auto">
           <p>
-            Podés combinar horarios y estilos según tu disponibilidad.
-          </p>
-          <p>
-            Clases presenciales grupales en Chivilcoy (abril a agosto)
+            Clases presenciales grupales en Chivilcoy y clases online pregrabadas para todo el mundo.
           </p>
           <p className="italic">
             Cualquier consulta, estoy a disposición ✨

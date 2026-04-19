@@ -73,7 +73,7 @@ export default function Footer() {
                 target="_blank"
                 className="flex items-center gap-3 hover:text-primary transition">
                 <SiGooglemaps className="w-4 h-4 shrink-0" />
-                <span>Chivilcoy, Buenos Aires</span>
+                <span>Chivilcoy, Bs As</span>
               </a>
             </li>
 

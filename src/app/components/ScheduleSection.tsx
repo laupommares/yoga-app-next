@@ -1,11 +1,8 @@
 "use client";
 
-import { useState } from "react";
-
 type Slot = {
   time: string;
   name: string;
-  disabled?: boolean;
 };
 
 type DaySchedule = {
@@ -14,18 +11,6 @@ type DaySchedule = {
 };
 
 export default function ScheduleSection() {
-  const [selected, setSelected] = useState<string[]>([]);
-
-  const toggleSlot = (value: string, disabled?: boolean) => {
-    if (disabled) return;
-
-    setSelected((prev) =>
-      prev.includes(value)
-        ? prev.filter((v) => v !== value)
-        : [...prev, value]
-    );
-  };
-
   const schedule: DaySchedule[] = [
     {
       day: "Lunes",
@@ -38,7 +23,7 @@ export default function ScheduleSection() {
       day: "Martes",
       slots: [
         { time: "14:00 — 15:00", name: "Yoga Ayurveda" },
-        { time: "20:30 — 21:30", name: "Yoga Ayurveda", disabled: true },
+        { time: "20:30 — 21:30", name: "Yoga Ayurveda" },
       ],
     },
     {
@@ -52,91 +37,66 @@ export default function ScheduleSection() {
       slots: [
         { time: "14:00 — 15:00", name: "Ashtanga Vinhasa Yoga" },
         { time: "19:00 — 20:00", name: "Yoga para embarazadas" },
-        { time: "20:30 — 21:30", name: "Yoga Ayurveda", disabled: true },
+        { time: "20:30 — 21:30", name: "Yoga Ayurveda" },
       ],
     },
   ];
 
-  const message = encodeURIComponent(
-    `Hola! Me gustaría reservar las siguientes clases:\n\n${selected.join("\n")}`
-  );
-
   return (
-    <section id="schedule" className="py-16 bg-surface-container-low">
-      <div className="max-w-5xl mx-auto px-6">
+    <section id="schedule" className="py-24 bg-surface-container-low">
+      <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-light">
-            Horarios semanales
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-light italic">
+            Horarios Semanales
           </h2>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {schedule.map((day) => (
-            <div key={day.day} className="space-y-4">
-
-              <h4 className="text-sm uppercase tracking-wide text-stone-400">
+        {/* Grid estilo calendario */}
+        <div className="w-full flex max-md:flex-col md:gap-4 gap-y-12 justify-center">
+          {schedule.map((day, index) => (
+            <div
+              key={day.day}
+              className={`px-4 ${
+                index !== schedule.length - 1
+                  ? "md:border-r md:border-stone-200/50 "
+                  : ""
+              }`}
+            >
+              {/* Día */}
+              <h4 className="font-serif text-xl italic border-b border-primary/20 pb-3 mb-6">
                 {day.day}
               </h4>
 
-              <div className="space-y-3">
-                {day.slots.map((slot, i) => {
-                  const value = `${day.day} ${slot.time} - ${slot.name}`;
-                  const isActive = selected.includes(value);
+              {/* Slots */}
+              <div className="space-y-8">
+                {day.slots.map((slot, i) => (
+                  <div
+                    key={i}
+                    className="group transition-all"
+                  >
+                    <p className="text-[11px] uppercase tracking-widest text-primary/70">
+                      {slot.time}
+                    </p>
 
-                  return (
-                    <button
-                      key={i}
-                      onClick={() => !slot.disabled && toggleSlot(value)}
-                      className={`w-full text-left p-3 rounded-lg border transition-all duration-200
-
-                        ${
-                          slot.disabled
-                            ? "bg-earth-soft border-transparent text-text-muted cursor-default"
-                            : isActive
-                            ? "border-primary bg-primary/10"
-                            : "border-stone-200 hover:border-primary/40 hover:bg-earth-soft/40"
-                        }
-                      `}
-                    >
-                      <p className="text-[11px] uppercase">
-                        {slot.time}
-                      </p>
-
-                      <p className="text-sm mt-1">
-                        {slot.name}
-                      </p>
-
-                      {slot.disabled && (
-                        <span className="text-[10px] uppercase text-stone-400 mt-1 block">
-                          Completo
-                        </span>
-                      )}
-                    </button>
-                  );
-                })}
+                    <p className="text-sm mt-1 font-medium">
+                      {slot.name}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="mt-10 text-center">
+        {/* CTA fijo */}
+        <div className="mt-20 text-center">
           <a
-            href={`https://wa.me/5492346566187?text=${message}`}
-            className={`inline-block px-8 py-2.5 border text-[11px] uppercase tracking-[0.15em] transition
-              ${
-                selected.length
-                  ? "border-primary text-primary hover:bg-primary hover:text-white"
-                  : "border-stone-300 text-stone-400 pointer-events-none"
-              }
-            `}
+            href="https://wa.me/5492346566187"
+            className="inline-block px-10 py-3 border border-primary text-primary text-[11px] uppercase tracking-[0.2em] hover:bg-primary hover:text-white transition-all"
           >
-            {selected.length
-              ? `Reservar (${selected.length})`
-              : "Seleccioná un horario"}
+            Consultar por WhatsApp
           </a>
         </div>
 

@@ -1,26 +1,26 @@
 export default function Practices() {
   const classes = [
     {
-      title: "Ashtanga Yoga",
-      duration: "60min",
-      description:
-        "Una meditación en movimiento. A través de la respiración consciente y secuencias de posturas, purificamos el sistema nervioso y cultivamos una concentración inquebrantable.",
-      schedule: "CADA LUNES & MIÈRCOLES",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuD6efkfs0DFLV5Wzf2VNNXXoSmfo_-qS4cLHBoO4TXvHrQKLhC7jNyw9KwNtmtPRGmb2rEJzZGbTRki391KAjD56-dHEJKLj6GHSpquDeTmQ_aNo8aB9_l56QfOmroxVt6LDeJJFskFKbBeiRLQzMIwkWkC8CrPYIjzKbAM9bl1xo4-ujHwt0mcWplse4x1XiZ0iWxI4ni3oD3QQxRvbaPLRq8xpN5EHGNVBx0J0LmaBU3pbuXbZoEM7IbkLDOjlvZu7jw-NqWfj84",
-      reverse: false,
-      italic: false,
-    },
-    {
-      title: "Ayurveda",
+      title: "Yoga terapeutico con orietación Ayurveda",
       duration: "60min",
       description:
         "La ciencia de la vida. Te brindamos herramientas para comprender tu constitución única (Doshas) y ajustar tu nutrición y hábitos para vivir en sintonía con la naturaleza.",
       schedule: "LUNES, MARTES & JUEVES",
       image:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuA9zkpf7djgpqxZYF2-qPUNNElK5JintruaQ1JR6UGVwrxFtjg5SfExK_S-mCplyYiOm5dO1OQHLBPai4UioBIh5z8ESyzaTZjBh8-yw6_QG55PLRcUCvBc4yHSV18pG_N4TggNI9Owa8KgLNAVKEAP1WZStREYbWq6ogQCeGGXnfbveO0CheNMq5fcY0CuZNwMwkmpRu7rkg_7sgK80Pao4j2qJDfeEyeCu5kjyE7N1t9IqeARFSx89u3gNiHwcRCKT1qtDfcaVJA",
-      reverse: true,
+      reverse: false,
       italic: true,
+    },
+    {
+      title: "Ashtanga Vinhasa",
+      duration: "60min",
+      description:
+        "Una meditación en movimiento. A través de la respiración consciente y secuencias de posturas, purificamos el sistema nervioso y cultivamos una concentración inquebrantable.",
+      schedule: "CADA LUNES & MIÈRCOLES",
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuD6efkfs0DFLV5Wzf2VNNXXoSmfo_-qS4cLHBoO4TXvHrQKLhC7jNyw9KwNtmtPRGmb2rEJzZGbTRki391KAjD56-dHEJKLj6GHSpquDeTmQ_aNo8aB9_l56QfOmroxVt6LDeJJFskFKbBeiRLQzMIwkWkC8CrPYIjzKbAM9bl1xo4-ujHwt0mcWplse4x1XiZ0iWxI4ni3oD3QQxRvbaPLRq8xpN5EHGNVBx0J0LmaBU3pbuXbZoEM7IbkLDOjlvZu7jw-NqWfj84",
+      reverse: true,
+      italic: false,
     },
     {
       title: "Clases 1 a 1 diseñadas exclusivamente para vos.",
@@ -34,10 +34,10 @@ export default function Practices() {
       italic: false,
     },
     {
-      title: "Clases 1:1 (presenciales y online)",
+      title: "Prenatal",
       duration: "60min",
       description:
-        "Clases individuales diseñadas exclusivamente para vos. Un espacio de atención plena donde cada práctica se adapta a tus necesidades físicas, emocionales y energéticas, acompañándote de manera cercana y consciente para potenciar tu bienestar integral. Disponibles de forma presencial o online, ideales para abordar patologías específicas o para quienes buscan una experiencia íntima y personalizada.",
+        "Un espacio seguro para habitar tu embarazo con presencia, conexión y confianza. Las clases están diseñadas para acompañarte amorosamente en cada etapa, respetando tus tiempos, tus cambios y las necesidades de tu cuerpo. Aprendé a aliviar tensiones, fortalecer tu suelo pélvico, conectar con tu bebé y prepararte para el parto a través de prácticas conscientes, adaptadas a cada trimestre y a cada mujer.",
       schedule: "CADA LUNES & MIÈRCOLES",
       image:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuCpsx4907bV-2dIuVPXLxTBZxfyp_DD1KPBwWeevNNSqNkB95OyxAaZC7vDmxb4-2V0Lq9XvTG4G3HRuPIT-X7NPvnw6qF9lE5YJn6I0XHJGNcZkw6ayetVkMaWIqlXYH_pMvjvNZ6LsSFIGBjYqlIKkXGTgNCe8Cirx988DtssitfEgWC8PAp4zy8_0z9Rqo5eYKq2a-O9TDmHdOM0UXLBKib25mWHRysPmaxDiKnn1jzngKg8xTYjBma4rGKw0SgAKut451m7EcU",

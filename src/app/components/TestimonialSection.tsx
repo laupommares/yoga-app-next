@@ -4,7 +4,7 @@ export default function TestimonialSection() {
       <div className="mx-auto max-w-2xl px-6 text-center">
 
         <blockquote className="font-headline text-xl md:text-2xl font-light italic leading-relaxed text-text-primary">
-          El silencio no es la ausencia de sonido, sino la presencia de armonía.
+          Regalate bienestar, habitá todo tu ser en armonía. Bienvenid@ a nuestra comunidad.
         </blockquote>
 
       </div>

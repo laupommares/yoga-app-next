@@ -24,29 +24,23 @@ export default function AboutSection() {
             <div className="space-y-4 text-sm text-on-surface-variant font-light leading-relaxed">
 
               <p>
-                Soy Jori Cantone, instructora de yoga, y acompaño procesos desde una mirada consciente, terapéutica y humana.
+                Soy Jori Cantone, instructora de yoga, y acompaño procesos desde una mirada consciente, terapéutica y empática.
               </p>
 
               <p>
-                Llegué al yoga en un momento que transformó mi vida, y desde entonces lo vivo como una práctica de conexión, presencia y bienestar real.
+                Llegué al yoga en un momento que transformó mi vida, con la necesidad de canalizar mis emociones y sentirme bien en mi propio cuerpo. Desde entonces una chispa se encendió en mi y tranformó mi vida, mi cuerpo y mi sentir.
               </p>
 
               <p>
-                En mis clases vas a encontrar un espacio para volver al cuerpo, respirar con más conciencia, habitar tus emociones y cultivar una relación más amable con vos misma.
+                Actualmente lo vivo con pasión, es mi hábito de conexión, presencia y bienestar real. En mis clases vas a encontrar un espacio para volver al cuerpo, respirar con más conciencia, habitar tus emociones y cultivar una relación más amable con vos mism@.
               </p>
 
               <p>
-                Mi enfoque integra herramientas del yoga terapéutico, Ayurveda, yoga prenatal y Ashtanga Vinyasa, adaptando cada práctica a las necesidades de cada persona.
+                Mi enfoque es integral, me capacité en yoga terapéutico con orientación Ayurveda, Ashtanga Vinyasa y yoga prenatal, adaptando cada práctica a las necesidades de cada persona.
               </p>
-
-              <p>
-                Creo en un yoga posible, sensible y accesible.
-              </p>
-
               <p>
                 Un espacio donde no hace falta “hacerlo perfecto”, sino simplemente llegar, respirar y empezar.
               </p>
-
               <p>
                 Si sentís que este camino resuena con vos, sos bienvenida.
               </p>

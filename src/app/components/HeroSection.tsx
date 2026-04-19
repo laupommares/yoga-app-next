@@ -11,17 +11,16 @@ export default function HeroSection() {
         <div className="absolute bg-surface/80 backdrop-blur-xl z-20 rounded-xl">
           <div className="inline-block shadow-editorial p-6 md:p-10">
             <h2 className="uppercase tracking-[0.2em] text-text-muted">
-              PROF. JORGELINA CANTONE
+              INSTRUCTORA JORI CANTONE
             </h2>
 
             <h1 className="font-headline mb-8 leading-tight text-text-primary text-4xl md:text-6xl">
-              Volver a tu <br />
-              <span className="italic text-primary">centro</span>
+              Volver a lo <br />
+              <span className="italic text-primary">esencial</span>
             </h1>
 
             <p className="mb-10 max-w-sm text-base md:text-lg leading-relaxed text-text-secondary">
-              Ashtanga & Ayurveda para una vida en
-              equilibrio. Descubre el silencio que habita en el movimiento.
+              Un espacio para disfrutar el cuerpo, vovler al presente y conectar con la respiración. Clases de yoga para sentir la armonía que nos brinda la práctica.
             </p>
 
             <a href="#booking"
