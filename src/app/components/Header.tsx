@@ -59,8 +59,7 @@ export default function Navbar() {
             return (
               <a key={link.href}
                 href={link.href}
-                className={`
-                  relative uppercase pb-1 transition-colors duration-300
+                className={`relative uppercase pb-1 transition-colors duration-300
                   ${isActive
                     ? "text-earth"
                     : "text-text-muted hover:text-earth"
@@ -90,8 +89,7 @@ export default function Navbar() {
       <div className={`overflow-hidden transition-all duration-300 md:hidden ${open ? "max-h-125px py-6" : "max-h-0"}`}>
         <div className="flex flex-col items-center gap-6 px-8 text-sm">
           {links.map((link) => (
-            <a key={link.href} href={link.href}
-              onClick={() => setOpen(false)}
+            <a key={link.href} href={link.href} onClick={() => setOpen(false)}
               className={`group relative pb-1 transition-colors duration-300${active === link.href
                     ? "text-earth"
                     : "text-text-secondary hover:text-earth"}`}>
