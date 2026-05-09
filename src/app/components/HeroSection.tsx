@@ -1,37 +1,93 @@
+import Image from "next/image";
+
 export default function HeroSection() {
   return (
-    <section id="home" className="relative mb-16 flex min-h-[90vh] flex-col justify-center overflow-hidden px-8 md:px-24">
-      <div className="grid h-full grid-cols-12 items-center gap-4">
-        <div className="relative z-10 col-span-12 md:col-span-8 md:translate-x-110">
-          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAvNCcNSVW4W3gj-IP-PaX66C39pvtyMoo-NYyep6pImVDzPV1IieayG2y7SaBul3wMj7RPWOmNNwR3GGZjSEJNjHy5HM6PVkDIu--h80tVvqcNEkV-6gwZXRD1LU13BvIIscBKGVDS7v_hoYiQhq7jnuuELPxndddPnPY-wKUDEDclTjloHun4DILnPyXsNF4vdnl8r2gsJBcKsUZjE3pi3oraC9W841Nt2g7WVDjgl5hkTur8eoqISgZ6dYt92cGevVQjfQogJE"
-            alt="Yoga practice"
-            className="h-179 w-full rounded-xl object-cover shadow-editorial" />
-        </div>
-
-        <div className="absolute bg-surface/80 backdrop-blur-xl z-20 rounded-xl">
-          <div className="inline-block shadow-editorial p-6 md:p-10">
-            <h2 className="uppercase tracking-[0.2em] text-text-muted">
+    <section
+      id="home"
+      className="
+        relative overflow-hidden
+        px-6 py-16
+        sm:px-10
+        lg:px-16
+      "
+    >
+      <div className="mx-auto grid max-w-screen-2xl items-center gap-12 lg:grid-cols-12">
+        {/* TEXT */}
+        <div className="relative z-20 lg:col-span-5">
+          <div className="max-w-xl">
+            <p
+              className="
+                mb-6
+                text-[11px]
+                uppercase
+                tracking-[0.24em]
+                text-text-muted
+              "
+            >
               INSTRUCTORA JORI CANTONE
-            </h2>
-
-            <h1 className="font-headline mb-8 leading-tight text-text-primary text-4xl md:text-6xl">
-              Volver a lo <br />
-              <span className="italic text-primary">esencial</span>
-            </h1>
-
-            <p className="mb-10 max-w-sm text-base md:text-lg leading-relaxed text-text-secondary">
-              Un espacio para disfrutar el cuerpo, vovler al presente y conectar con la respiración. Clases de yoga para sentir la armonía que nos brinda la práctica.
             </p>
 
-            <a href="#booking"
-              className="inline-block border-b border-primary/30 pb-1 text-sm font-medium uppercase tracking-widest text-primary transition-all hover:border-primary">
-              Reservar Clase
+            <h1
+              className="
+                font-headline
+                text-4xl
+                leading-[1.05]
+                text-text-primary
+                md:text-5xl
+              "
+            >
+              Volver a lo <span className="italic text-primary">esencial</span>
+            </h1>
+
+            <p
+              className="
+                mt-8
+                max-w-md
+                text-base
+                leading-relaxed
+                text-text-secondary
+                md:text-lg
+              "
+            >
+              Un espacio para disfrutar el cuerpo, volver al presente y conectar con la respiración. Clases pensadas
+              para encontrar armonía, calma y bienestar.
+            </p>
+
+            <a
+              href="#schedule"
+              className="mt-8 hidden md:inline-flex items-center rounded-xs bg-primary px-6 py-3 text-sm uppercase tracking-[0.16em] text-on-primary transition-all duration-300 hover:scale-[1.02] hover:opacity-90å"
+            >
+              Reservar clase
             </a>
+          </div>
+        </div>
+
+        {/* IMAGE */}
+        <div className="relative lg:col-span-7">
+          <div className="overflow-hidden rounded-[2rem]">
+            <Image
+              src="/hero-3.png"
+              alt="Jori Cantone - Instructora de Yoga"
+              width={700}
+              height={900}
+              priority
+              className="h-auto w-full object-cover"
+            />
           </div>
         </div>
       </div>
 
-      <div className="pointer-events-none absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-primary-container/20 blur-[100px]" />
+      {/* ambient blur */}
+      <div
+        className="
+          pointer-events-none absolute
+          -bottom-24 -left-24
+          h-96 w-96
+          rounded-full
+          bg-primary-container/20
+          blur-[120px]
+        "
+      />
     </section>
   );
 }

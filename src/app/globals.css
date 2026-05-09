@@ -1,37 +1,20 @@
 @import "tailwindcss";
 
-/* =========================
-   THEME TOKENS — Tailwind v4
-========================= */
 @theme {
-  /* =========================
-     BRAND / ACCENT
-  ========================= */
+
   --color-primary: #7e813d;
   --color-on-primary: #ffffff;
 
-  /* =========================
-     TEXT
-  ========================= */
   --color-text-primary: #31332c;
   --color-text-secondary: #5e6058;
   --color-text-muted: #78716c;
 
-  /* =========================
-     EARTH / EDITORIAL
-  ========================= */
   --color-earth: #7e553e;
   --color-earth-soft: #f0eee9;
 
-  /* =========================
-     BACKGROUNDS / SURFACES
-  ========================= */
   --color-background: #f0eee9;
   --color-surface: #ffffff;
 
-  /* =========================
-     OPTIONAL SEMANTIC ALIASES
-  ========================= */
   --color-heading: #31332c;
   --color-body: #5e6058;
   --color-label: #78716c;
