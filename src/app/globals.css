@@ -1,37 +1,20 @@
 @import "tailwindcss";
 
-/* =========================
-   THEME TOKENS — Tailwind v4
-========================= */
 @theme {
-  /* =========================
-     BRAND / ACCENT
-  ========================= */
+
   --color-primary: #7e813d;
   --color-on-primary: #ffffff;
 
-  /* =========================
-     TEXT
-  ========================= */
   --color-text-primary: #31332c;
   --color-text-secondary: #5e6058;
   --color-text-muted: #78716c;
 
-  /* =========================
-     EARTH / EDITORIAL
-  ========================= */
   --color-earth: #7e553e;
   --color-earth-soft: #f0eee9;
 
-  /* =========================
-     BACKGROUNDS / SURFACES
-  ========================= */
   --color-background: #f0eee9;
   --color-surface: #ffffff;
 
-  /* =========================
-     OPTIONAL SEMANTIC ALIASES
-  ========================= */
   --color-heading: #31332c;
   --color-body: #5e6058;
   --color-label: #78716c;
@@ -40,9 +23,6 @@
   --color-section: #f0eee9;
 }
 
-/* =========================
-   BASE
-========================= */
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -79,9 +59,6 @@
   }
 }
 
-/* =========================
-   UTILITIES / HELPERS
-========================= */
 @layer utilities {
   .editorial-shadow {
     box-shadow: var(--shadow-editorial);
@@ -101,5 +78,21 @@
 
   .bleed-left {
     margin-left: -5vw;
+  }
+
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block md:inline-flex items-center rounded-xs bg-primary px-6 py-3 text-[11px] uppercase tracking-[0.16em] text-on-primary transition-all duration-300 hover:scale-[1.02] hover:opacity-90;
+  }
+  .btn-secondary {
+    @apply inline-block px-10 py-3 border border-primary text-primary text-[11px] uppercase tracking-[0.2em] hover:bg-primary hover:text-white transition-all;
+  }
+  .btn-link {
+    @apply text-xs uppercase tracking-[0.15em] text-earth hover:opacity-70 transition;
+  }
+  .eyebrow{
+    @apply text-xs uppercase tracking-wider text-text-muted;
   }
 }

@@ -1,37 +1,42 @@
+import Image from "next/image";
+
 export default function HeroSection() {
   return (
-    <section id="home" className="relative mb-16 flex min-h-[90vh] flex-col justify-center overflow-hidden px-8 md:px-24">
-      <div className="grid h-full grid-cols-12 items-center gap-4">
-        <div className="relative z-10 col-span-12 md:col-span-8 md:translate-x-110">
-          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAvNCcNSVW4W3gj-IP-PaX66C39pvtyMoo-NYyep6pImVDzPV1IieayG2y7SaBul3wMj7RPWOmNNwR3GGZjSEJNjHy5HM6PVkDIu--h80tVvqcNEkV-6gwZXRD1LU13BvIIscBKGVDS7v_hoYiQhq7jnuuELPxndddPnPY-wKUDEDclTjloHun4DILnPyXsNF4vdnl8r2gsJBcKsUZjE3pi3oraC9W841Nt2g7WVDjgl5hkTur8eoqISgZ6dYt92cGevVQjfQogJE"
-            alt="Yoga practice"
-            className="h-179 w-full rounded-xl object-cover shadow-editorial" />
-        </div>
+    <section id="home" className="relative overflow-hidden px-6 py-8 md:py-16 sm:px-12 lg:px-16">
+      <div className="mx-auto flex flex-col items-center gap-4 md:flex-row lg:gap-16 max-w-screen-2xl">
+        <div className="w-full md:w-6/12 lg:w-5/12">
+          <div className="max-w-xl">
+            <p className="mb-8 eyebrow">INSTRUCTORA JORI CANTONE</p>
 
-        <div className="absolute bg-surface/80 backdrop-blur-xl z-20 rounded-xl">
-          <div className="inline-block shadow-editorial p-6 md:p-10">
-            <h2 className="uppercase tracking-[0.2em] text-text-muted">
-              INSTRUCTORA JORI CANTONE
-            </h2>
-
-            <h1 className="font-headline mb-8 leading-tight text-text-primary text-4xl md:text-6xl">
-              Volver a lo <br />
-              <span className="italic text-primary">esencial</span>
+            <h1 className="font-headline text-4xl leading-widest text-text-primary lg:text-5xl">
+              Volver a lo <span className="italic text-primary">esencial</span>
             </h1>
 
-            <p className="mb-10 max-w-sm text-base md:text-lg leading-relaxed text-text-secondary">
-              Un espacio para disfrutar el cuerpo, vovler al presente y conectar con la respiración. Clases de yoga para sentir la armonía que nos brinda la práctica.
+            <p className="my-4 md:mt-8 text-base leading-relaxed font-light text-text-secondary lg:text-lg">
+              Un espacio para disfrutar el cuerpo, volver al presente y conectar con la respiración. Clases pensadas
+              para encontrar armonía, calma y bienestar.
             </p>
 
-            <a href="#booking"
-              className="inline-block border-b border-primary/30 pb-1 text-sm font-medium uppercase tracking-widest text-primary transition-all hover:border-primary">
-              Reservar Clase
+            <a href="#schedule" className="md:mt-8 btn-primary">
+              Reservar clase
             </a>
+          </div>
+        </div>
+
+        <div className="w-full md:w-6/12 lg:w-7/12 flex justify-center">
+          <div className="h-auto w-full object-cover brightness-[1.02] contrast-[0.97] saturate-[0.93] rounded-4xl">
+            <Image
+              src="/hero1.png"
+              alt="Jori Cantone - Instructora de Yoga"
+              width={700}
+              height={900}
+              priority
+              className="rounded-xl object-cover"
+            />
           </div>
         </div>
       </div>
 
-      <div className="pointer-events-none absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-primary-container/20 blur-[100px]" />
     </section>
   );
 }
