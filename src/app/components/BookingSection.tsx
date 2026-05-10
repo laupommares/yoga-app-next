@@ -25,7 +25,7 @@ const plans = [
 
 export default function BookingSection() {
   return (
-    <section id="booking" className="py-16 bg-surface text-text-primary">
+    <section id="booking" className="py-16 bg-background text-text-primary">
       <div className="max-w-2xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-8">

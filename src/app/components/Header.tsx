@@ -10,7 +10,7 @@ export default function Navbar() {
   const links = [
     { href: "#home", label: "Inicio" },
     { href: "#about", label: "Mi filosofía" },
-    { href: "#schedule", label: "Horarios" },
+/*  { href: "#schedule", label: "Horarios" }, */
     { href: "#booking", label: "Precios" },
     { href: "#practices", label: "Propuestas" },
   ];
