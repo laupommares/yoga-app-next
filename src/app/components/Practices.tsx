@@ -5,11 +5,11 @@ export default function Practices() {
     {
       title: "Yoga terapeutico con orietación Ayurveda",
       duration: "60min",
-      description: "La ciencia de la vida. Te brindamos herramientas para comprender tu constitución única (Doshas) y ajustar tu nutrición y hábitos para vivir en sintonía con la naturaleza.",
+      description:
+        "La ciencia de la vida. Te brindamos herramientas para comprender tu constitución única (Doshas) y ajustar tu nutrición y hábitos para vivir en sintonía con la naturaleza.",
       schedule: "LUNES, MARTES & JUEVES",
       image: "/ayurveda.jpg",
       reverse: false,
-      italic: true,
     },
     {
       title: "Ashtanga Vinhasa",
@@ -19,7 +19,6 @@ export default function Practices() {
       schedule: "CADA LUNES & MIÈRCOLES",
       image: "/ashtanga-2.png",
       reverse: true,
-      italic: false,
     },
     {
       title: "Clases 1 a 1 diseñadas exclusivamente para vos.",
@@ -29,7 +28,6 @@ export default function Practices() {
       schedule: "DÍAS CONVENIDOS",
       image: "/clases-individuales.png",
       reverse: false,
-      italic: false,
     },
     {
       title: "Prenatal",
@@ -39,18 +37,14 @@ export default function Practices() {
       schedule: "CADA LUNES & MIÈRCOLES",
       image: "/prenatal.png",
       reverse: true,
-      italic: false,
     },
   ];
 
   return (
     <section id="practices" className="py-16 px-6 md:px-12">
       <div className="mx-auto max-w-5xl">
-
         <div className="mb-12 text-center">
-          <p className="text-[11px] uppercase tracking-[0.15em] text-text-muted">
-            MIS PROPUESTAS
-          </p>
+          <p className="text-[11px] uppercase tracking-[0.15em] text-text-muted">MIS PROPUESTAS</p>
 
           <h2 className="font-headline text-2xl md:text-3xl text-text-primary">
             Prácticas <span className="italic text-primary">con Intención</span>
@@ -60,51 +54,37 @@ export default function Practices() {
         <div className="space-y-16">
           {classes.map((item) => (
             <div key={item.title}
-              className={`flex flex-col gap-6 md:flex-row md:items-center ${
-                item.reverse ? "md:flex-row-reverse" : ""
-              }`}>
-
+              className={`flex flex-col gap-6 md:flex-row md:items-center ${item.reverse ? "md:flex-row-reverse" : ""}`}>
               <div className="w-full md:w-1/2">
-              <div className="relative overflow-hidden rounded-xl aspect-4/3">
-  
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  width={600}
-                  height={600}
-                  className="h-full w-full object-cover brightness-[1.05] contrast-[0.92] saturate-[0.88]"
-                  priority
-                />
+                <div className="relative overflow-hidden rounded-xl aspect-4/3">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={600}
+                    height={600}
+                    className="h-full w-full object-cover brightness-[1.05] contrast-[0.92] saturate-[0.88]"
+                    priority
+                  />
 
-                <div className="absolute inset-0 bg-[#F6F1E8]/5 pointer-events-none" />
-              </div>
+                  <div className="absolute inset-0 bg-[#F6F1E8]/5 pointer-events-none" />
+                </div>
               </div>
 
               <div className="w-full md:w-1/2">
-
-                <h3 className={`font-headline mb-3 text-xl md:text-2xl ${
-                    item.italic ? "italic text-text-secondary" : "text-text-primary"
-                  }`}>
+                <h3 className="font-headline mb-3 text-xl md:text-2xl text-text-primary">
                   {item.title}
-                  <span className="ml-2 text-sm font-light text-text-muted">
-                    / {item.duration}
-                  </span>
+                  <span className="ml-2 text-sm font-light text-text-muted">/ {item.duration}</span>
                 </h3>
 
-                <p className="mb-4 text-sm leading-relaxed text-text-secondary">
-                  {item.description}
-                </p>
+                <p className="mb-4 text-sm leading-relaxed text-text-secondary">{item.description}</p>
 
-                <a href="#schedule" className="text-[11px] uppercase tracking-[0.12em] text-primary">
+                <a href="#schedule" className="btn-link">
                   {item.schedule}
                 </a>
-
               </div>
-
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
