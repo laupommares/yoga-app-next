@@ -44,7 +44,7 @@ export default function Practices() {
     <section id="practices" className="py-16 px-6 md:px-12">
       <div className="mx-auto max-w-5xl">
         <div className="mb-12 text-center">
-          <p className="text-[11px] uppercase tracking-[0.15em] text-text-muted">MIS PROPUESTAS</p>
+          <p className="eyebrow mb-4">MIS PROPUESTAS</p>
 
           <h2 className="font-headline text-2xl md:text-3xl text-text-primary">
             Prácticas <span className="italic text-primary">con Intención</span>

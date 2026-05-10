@@ -40,7 +40,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-stone-200/40 bg-stone-50/80 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-screen-2xl items-center justify-between px-8 py-4 lg:px-14">
+      <div className="mx-auto flex max-w-screen-2xl items-center justify-between px-8 py-4 lg:px-16">
         <a href="#home" className="shrink-0">
           <Image src="/logo.svg" alt="Logo" width={118} height={34} className="w-28 lg:w-30" />
         </a>

@@ -84,12 +84,15 @@
 
 @layer components {
   .btn-primary {
-    @apply md:inline-flex items-center rounded-xs bg-primary px-6 py-3 text-[11px] uppercase tracking-[0.16em] text-on-primary transition-all duration-300 hover:scale-[1.02] hover:opacity-90;
+    @apply inline-block md:inline-flex items-center rounded-xs bg-primary px-6 py-3 text-[11px] uppercase tracking-[0.16em] text-on-primary transition-all duration-300 hover:scale-[1.02] hover:opacity-90;
   }
   .btn-secondary {
     @apply inline-block px-10 py-3 border border-primary text-primary text-[11px] uppercase tracking-[0.2em] hover:bg-primary hover:text-white transition-all;
   }
   .btn-link {
     @apply text-xs uppercase tracking-[0.15em] text-earth hover:opacity-70 transition;
+  }
+  .eyebrow{
+    @apply text-xs uppercase tracking-wider text-text-muted;
   }
 }

@@ -4,8 +4,8 @@ export default function AboutSection() {
   return (
     <section id="about" className="bg-surface py-16">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+          <div className="w-full order-2 md:order-1">
             <Image
               src="/about.png"
               alt="Jori Yoga"
@@ -14,12 +14,12 @@ export default function AboutSection() {
               className="w-full h-105 object-cover rounded-xl"
             />
           </div>
-          <div>
-            <span className="block text-xs uppercase tracking-[0.15em] text-stone-400 mb-4">Mi filosofía</span>
+          <div className="order-1 md:order-2">
+            <p className="eyebrow mb-4">Mi filosofía</p>
 
             <h2 className="text-2xl md:text-3xl font-light mb-6">Soy Jori</h2>
 
-            <div className="space-y-4 text-sm text-on-surface-variant font-light leading-relaxed">
+            <div className="space-y-4 text-sm text-text-secondary font-light leading-relaxed">
               <p>
                 Soy Jori Cantone, instructora de yoga, y acompaño procesos desde una mirada consciente, terapéutica y
                 empática.
@@ -41,13 +41,12 @@ export default function AboutSection() {
                 Mi enfoque es integral, me capacité en yoga terapéutico con orientación Ayurveda, Ashtanga Vinyasa y
                 yoga prenatal, adaptando cada práctica a las necesidades de cada persona.
               </p>
-              <p>Un espacio donde no hace falta “hacerlo perfecto”, sino simplemente llegar, respirar y empezar.</p>
-              <p>Si sentís que este camino resuena con vos, sos bienvenida.</p>
+              <p>Un espacio donde no hace falta “hacerlo perfecto”, sino simplemente llegar, respirar y empezar. Si sentís que este camino resuena con vos, sos bienvenid@.</p>
             </div>
 
             {/* CTA */}
             <div className="mt-8">
-              <a href="#schedule" className="btn-link">
+              <a href="#schedule" className="btn-secondary">
                 Reservar una clase
               </a>
             </div>

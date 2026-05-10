@@ -25,7 +25,7 @@ const plans = [
 
 export default function BookingSection() {
   return (
-    <section id="booking" className="py-16 bg-surface">
+    <section id="booking" className="py-16 bg-surface text-text-primary">
       <div className="max-w-2xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-8">
@@ -38,7 +38,7 @@ export default function BookingSection() {
             <div key={plan.title} className="flex items-center justify-between py-5">
               <div>
                 <h4 className="text-base md:text-lg font-light">{plan.title}</h4>
-                <p className="text-xs text-on-surface-variant font-light">{plan.description}</p>
+                <p className="text-xs text-text-secondary font-light">{plan.description}</p>
               </div>
 
               <span className="text-xl md:text-2xl font-light text-primary whitespace-nowrap">{plan.price}</span>
@@ -47,9 +47,9 @@ export default function BookingSection() {
         </div>
 
         {/* Info extra */}
-        <div className="mt-8 space-y-4 text-xs text-on-surface-variant font-light leading-relaxed text-center max-w-md mx-auto">
+        <div className="mt-8 space-y-4 text-xs text-text-secondary font-light leading-relaxed text-center max-w-md mx-auto">
           <p>Clases presenciales grupales en Chivilcoy y clases online pregrabadas para todo el mundo.</p>
-          <p className="italic">Cualquier consulta, estoy a disposición ✨</p>
+          <p className="italic text-primary">Cualquier consulta, estoy a disposición ✨</p>
         </div>
 
         {/* CTA */}
