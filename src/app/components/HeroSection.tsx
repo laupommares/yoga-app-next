@@ -26,7 +26,7 @@ export default function HeroSection() {
         <div className="w-full md:w-6/12 lg:w-7/12 flex justify-center">
           <div className="h-auto w-full object-cover brightness-[1.02] contrast-[0.97] saturate-[0.93] rounded-4xl">
             <Image
-              src="/hero1.png"
+              src="/hero.png"
               alt="Jori Cantone - Instructora de Yoga"
               width={700}
               height={900}

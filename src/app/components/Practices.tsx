@@ -8,7 +8,7 @@ export default function Practices() {
       description:
         "La ciencia de la vida. Te brindamos herramientas para comprender tu constitución única (Doshas) y ajustar tu nutrición y hábitos para vivir en sintonía con la naturaleza.",
       schedule: "LUNES, MARTES & JUEVES",
-      image: "/ayurveda.jpg",
+      image: "/practices-1.png",
       reverse: false,
     },
     {
@@ -17,7 +17,7 @@ export default function Practices() {
       description:
         "Una meditación en movimiento. A través de la respiración consciente y secuencias de posturas, purificamos el sistema nervioso y cultivamos una concentración inquebrantable.",
       schedule: "CADA LUNES & MIÈRCOLES",
-      image: "/ashtanga-2.png",
+      image: "/practices-4.png",
       reverse: true,
     },
     {
@@ -26,7 +26,7 @@ export default function Practices() {
       description:
         "Un espacio de atención plena donde cada práctica se adapta a tus necesidades físicas, emocionales y energéticas, acompañándote de manera cercana y consciente para potenciar tu bienestar integral. Ideales para abordar patologías específicas o para quienes buscan una experiencia íntima y personalizada, ya sea desde la comodidad de tu hogar o en el estudio, a través de encuentros individuales.",
       schedule: "DÍAS CONVENIDOS",
-      image: "/clases-individuales.png",
+      image: "/practices-5.png",
       reverse: false,
     },
     {
@@ -35,7 +35,7 @@ export default function Practices() {
       description:
         "Un espacio seguro para habitar tu embarazo con presencia, conexión y confianza. Las clases están diseñadas para acompañarte amorosamente en cada etapa, respetando tus tiempos, tus cambios y las necesidades de tu cuerpo. Aprendé a aliviar tensiones, fortalecer tu suelo pélvico, conectar con tu bebé y prepararte para el parto a través de prácticas conscientes, adaptadas a cada trimestre y a cada mujer.",
       schedule: "CADA LUNES & MIÈRCOLES",
-      image: "/prenatal.png",
+      image: "/practices-3.png",
       reverse: true,
     },
   ];
@@ -56,17 +56,16 @@ export default function Practices() {
             <div key={item.title}
               className={`flex flex-col gap-6 md:flex-row md:items-center ${item.reverse ? "md:flex-row-reverse" : ""}`}>
               <div className="w-full md:w-1/2">
-                <div className="relative overflow-hidden rounded-xl aspect-4/3">
+                <div className="relative overflow-hidden rounded-xl">
                   <Image
                     src={item.image}
                     alt={item.title}
                     width={600}
                     height={600}
-                    className="h-full w-full object-cover brightness-[1.05] contrast-[0.92] saturate-[0.88]"
+                    className="object-cover h-82"
                     priority
                   />
 
-                  <div className="absolute inset-0 bg-[#F6F1E8]/5 pointer-events-none" />
                 </div>
               </div>
 
