@@ -12,7 +12,7 @@ import { LuBadgeDollarSign } from "react-icons/lu";
 export default function Footer() {
   return (
 <footer className="w-full bg-stone-100 pt-16 pb-10">
-  <div className="container mx-auto max-w-screen-2xl px-8 lg:px-16">
+  <div className="container mx-auto max-w-screen-2xl px-6 lg:px-16">
 
     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
 
