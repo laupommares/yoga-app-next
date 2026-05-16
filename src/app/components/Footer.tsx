@@ -98,7 +98,7 @@ export default function Footer() {
 
             <li>
               <a
-                href="https://tiktok.com/@tuusuario"
+                href="https://https://www.tiktok.com/@joricantone.yoga"
                 className="flex items-center gap-3 hover:text-primary transition"
               >
                 <AiFillTikTok className="w-4 h-4 shrink-0" />

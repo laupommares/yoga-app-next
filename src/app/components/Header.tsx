@@ -67,7 +67,7 @@ export default function Navbar() {
           Reservar
         </a>
 
-        <button onClick={() => setOpen(!open)} className="text-earth flex md:hidden">
+        <button onClick={() => setOpen(!open)} className="text-primary flex md:hidden">
           <span className="material-symbols-outlined text-4xl!">{open ? "close" : "menu"}</span>
         </button>
       </div>
