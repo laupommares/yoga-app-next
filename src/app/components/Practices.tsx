@@ -26,7 +26,7 @@ export default function Practices() {
       description:
         "Un espacio de atención plena donde cada práctica se adapta a tus necesidades físicas, emocionales y energéticas, acompañándote de manera cercana y consciente para potenciar tu bienestar integral. Ideales para abordar patologías específicas o para quienes buscan una experiencia íntima y personalizada, ya sea desde la comodidad de tu hogar o en el estudio, a través de encuentros individuales.",
       schedule: "DÍAS CONVENIDOS",
-      image: "clases-uno-a-uno/.png",
+      image: "/clases-uno-a-uno.png",
       reverse: false,
     },
     {
@@ -59,8 +59,7 @@ export default function Practices() {
               <div className="w-full md:w-1/2">
                 <div
                   className="relative overflow-hidden rounded-xl bg-background h-[240px] sm:h-[300px] lg:bg-transparent lg:h-auto">
-                  <Image
-                    src={item.image}
+                  <Image src={item.image}
                     alt={item.title}
                     width={600}
                     height={600}
