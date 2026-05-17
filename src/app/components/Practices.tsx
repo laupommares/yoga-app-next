@@ -43,7 +43,7 @@ export default function Practices() {
   return (
     <section id="practices" className="py-16 px-6 md:px-12">
       <div className="mx-auto max-w-5xl">
-        <div className="mb-12 text-center">
+        <div className="mb-16 text-center">
           <p className="eyebrow mb-4">MIS PROPUESTAS</p>
 
           <h2 className="font-headline text-2xl md:text-3xl text-text-primary">
