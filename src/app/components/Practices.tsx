@@ -55,7 +55,7 @@ export default function Practices() {
           {classes.map((item) => (
             <div
               key={item.title}
-              className={`flex flex-col gap-2 lg:gap-6 md:flex-row md:items-center ${item.reverse ? "md:flex-row-reverse" : ""}`}>
+              className={`flex flex-col gap-4 lg:gap-6 md:flex-row md:items-center ${item.reverse ? "md:flex-row-reverse" : ""}`}>
               <div className="w-full md:w-1/2">
                 <div
                   className="relative overflow-hidden rounded-xl bg-background h-[240px] sm:h-[300px] lg:bg-transparent lg:h-auto">
