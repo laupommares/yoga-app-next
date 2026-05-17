@@ -78,7 +78,7 @@ export default function Header() {
             <a key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className={`group relative pb-1 transition-colors duration-300${active === link.href ? "text-earth" : "text-text-secondary hover:text-earth"
+              className={`group relative uppercase transition-colors duration-300 ${active === link.href ? "text-earth" : "text-text-secondary hover:text-earth"
                 }`} >
               {link.label}
               <span
