@@ -9,7 +9,7 @@ export default function Footer() {
 <footer className="w-full bg-surface py-12">
   <div className="container mx-auto max-w-screen-2xl px-6 lg:px-16">
 
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12">
 
       {/* LOGO */}
       <div className="flex flex-col items-center justify-center gap-4 text-center lg:text-left">
