@@ -2,17 +2,17 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative overflow-hidden px-6 py-8 md:py-16 sm:px-12 lg:px-16">
-      <div className="mx-auto flex flex-col items-center gap-4 md:flex-row lg:gap-16 max-w-screen-2xl">
+    <section id="home" className="relative overflow-hidden px-6 py-12 md:py-16 sm:px-12 lg:px-16">
+      <div className="mx-auto flex flex-col items-center gap-6 md:flex-row lg:gap-16 max-w-screen-2xl">
         <div className="w-full md:w-6/12 lg:w-5/12">
           <div className="max-w-xl">
-            <p className="mb-8 eyebrow">INSTRUCTORA JORI CANTONE</p>
+            <p className="mb-4 lg:mb-8 eyebrow">INSTRUCTORA JORI CANTONE</p>
 
             <h1 className="font-headline text-4xl leading-widest text-text-primary lg:text-5xl">
               Volver a lo <span className="italic text-primary">esencial</span>
             </h1>
 
-            <p className="my-4 md:mt-8 text-base leading-relaxed font-light text-text-secondary lg:text-lg">
+            <p className="my-6 md:mt-8 text-base leading-relaxed font-light text-text-secondary lg:text-lg">
               Un espacio para disfrutar el cuerpo, volver al presente y conectar con la respiración. Clases pensadas
               para encontrar armonía, calma y bienestar.
             </p>
