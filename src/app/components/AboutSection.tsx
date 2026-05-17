@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="bg-surface py-16">
+    <section id="about" className="bg-surface py-12 lg:py-16">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 items-center">
           <div className="w-full order-2 md:order-1">
             <Image
               src="/about.png"
@@ -45,7 +45,7 @@ export default function AboutSection() {
             </div>
 
             {/* CTA */}
-            <div className="mt-8">
+            <div className="mt-6 lg:mt-8">
               <a href="#schedule" className="btn-secondary">
                 Reservar una clase
               </a>

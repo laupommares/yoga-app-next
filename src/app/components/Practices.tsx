@@ -41,9 +41,9 @@ export default function Practices() {
   ];
 
   return (
-    <section id="practices" className="py-16 px-6 md:px-12">
+    <section id="practices" className="py-12 lg:py-16 px-6 md:px-12">
       <div className="mx-auto max-w-5xl">
-        <div className="mb-16 text-center">
+        <div className="mb-6 lg:mb-16 text-center">
           <p className="eyebrow mb-4">MIS PROPUESTAS</p>
 
           <h2 className="font-headline text-2xl md:text-3xl text-text-primary">
@@ -51,7 +51,7 @@ export default function Practices() {
           </h2>
         </div>
 
-        <div className="space-y-16">
+        <div className="space-y-8 lg:space-y-16">
           {classes.map((item) => (
             <div
               key={item.title}

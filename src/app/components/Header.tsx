@@ -3,14 +3,14 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-export default function Navbar() {
+export default function Header() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("#home");
 
   const links = [
     { href: "#home", label: "Inicio" },
     { href: "#about", label: "Mi filosofía" },
-/*  { href: "#schedule", label: "Horarios" }, */
+    { href: "#journey", label: "Horarios" }, 
     { href: "#booking", label: "Precios" },
     { href: "#practices", label: "Propuestas" },
   ];

@@ -3,15 +3,10 @@ import { AiFillTikTok } from "react-icons/ai";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { SiGooglemaps } from "react-icons/si";
-import { HiOutlineHome } from "react-icons/hi";
-import { LuFlower2 } from "react-icons/lu";
-import { LuCalendar } from "react-icons/lu";
-import { LuHeartHandshake } from "react-icons/lu";
-import { LuBadgeDollarSign } from "react-icons/lu";
 
 export default function Footer() {
   return (
-<footer className="w-full bg-stone-100 pt-16 pb-10">
+<footer className="w-full bg-surface py-12">
   <div className="container mx-auto max-w-screen-2xl px-6 lg:px-16">
 
     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -68,8 +63,7 @@ export default function Footer() {
 
           <ul className="space-y-3 text-sm text-stone-600 font-light">
             <li>
-              <a
-                href="https://maps.google.com/?q=Pringles+36+Chivilcoy"
+              <a href="https://maps.google.com/?q=Pringles+36+Chivilcoy"
                 target="_blank"
                 className="flex items-center gap-3 hover:text-primary transition">
                 <SiGooglemaps className="w-4 h-4 shrink-0" />
@@ -86,23 +80,19 @@ export default function Footer() {
             </li>
 
             <li>
-              <a
-                href="https://instagram.com/joricantone.yoga"
+              <a href="https://instagram.com/joricantone.yoga"
                 target="_blank"
-                className="flex items-center gap-3 hover:text-primary transition"
-              >
+                className="flex items-center gap-3 hover:text-primary transition">
                 <BiLogoInstagramAlt className="w-4 h-4 shrink-0" />
                 <span>@joricantone.yoga</span>
               </a>
             </li>
 
             <li>
-              <a
-                href="https://https://www.tiktok.com/@joricantone.yoga"
-                className="flex items-center gap-3 hover:text-primary transition"
-              >
+              <a href="https://https://www.tiktok.com/@joricantone.yoga"
+                className="flex items-center gap-3 hover:text-primary transition">
                 <AiFillTikTok className="w-4 h-4 shrink-0" />
-                <span>@tuusuario</span>
+                <span>@joricantone.yoga</span>
               </a>
             </li>
           </ul>
