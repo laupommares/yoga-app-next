@@ -13,7 +13,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="my-6 md:mt-8 text-base leading-relaxed font-light text-text-secondary lg:text-lg">
-              Un espacio para disfrutar el cuerpo, volver al presente y conectar con la respiración. Clases pensadas
+              Un espacio para disfrutar el cuerpo, volver al presente y conectar con la respiración. Clases diseñadas
               para encontrar armonía, calma y bienestar.
             </p>
 

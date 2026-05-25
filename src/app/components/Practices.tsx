@@ -3,20 +3,20 @@ import Image from "next/image";
 export default function Practices() {
   const classes = [
     {
-      title: "Yoga terapeutico con orietación Ayurveda",
+      title: "Yoga Terapéutico con orientación Ayurveda",
       duration: "60min",
       description:
-        "La ciencia de la vida. Te brindamos herramientas para comprender tu constitución única (Doshas) y ajustar tu nutrición y hábitos para vivir en sintonía con la naturaleza.",
-      schedule: "LUNES, MARTES & JUEVES",
-      image: "/ayurveda.png",
+        "Una práctica orientada a restablecer el equilibrio integral, contemplando la energía de los 5 elementos que habitan en la naturaleza y también en nosotros. Cada clase aborda un objetivo físico específico en conexión con un enfoque psicoemocional y energético, a través de un viaje interior inspirado en la energía de los 7 chakras. Este espacio invita al autoconocimiento, la transformación y la reconexión con la propia esencia, cultivando armonía y bienestar.",
+      schedule: "COORDINÁ TU PRÁCTICA",
+      image: "/ayur.png",
       reverse: false,
     },
     {
-      title: "Ashtanga Vinhasa",
+      title: "Ashtanga Vinyasa",
       duration: "60min",
       description:
-        "Una meditación en movimiento. A través de la respiración consciente y secuencias de posturas, purificamos el sistema nervioso y cultivamos una concentración inquebrantable.",
-      schedule: "CADA LUNES & MIÈRCOLES",
+        "Una práctica dinámica que sincroniza respiracion y movimiento, basada en una secuencia tradicional que se aprende progresivamente Mediante la repetición desarrolla tu fuerza, flexibilidad, presencia, purificando tu energia y calmando las fluctuaciones de la mente.",
+      schedule: "COORDINÁ TU PRÁCTICA",
       image: "/ashtanga.png",
       reverse: true,
     },
@@ -24,8 +24,8 @@ export default function Practices() {
       title: "Clases 1 a 1 diseñadas exclusivamente para vos.",
       duration: "60min",
       description:
-        "Un espacio de atención plena donde cada práctica se adapta a tus necesidades físicas, emocionales y energéticas, acompañándote de manera cercana y consciente para potenciar tu bienestar integral. Ideales para abordar patologías específicas o para quienes buscan una experiencia íntima y personalizada, ya sea desde la comodidad de tu hogar o en el estudio, a través de encuentros individuales.",
-      schedule: "DÍAS CONVENIDOS",
+        "Un espacio de atención plena donde cada práctica se adapta a tus necesidades físicas, emocionales y energéticas, acompañándote de manera cercana y consciente para potenciar tu bienestar integral. Ideales para abordar patologías específicas o para quienes buscan una experiencia íntima y personalizada a través de encuentros individuales.",
+      schedule: "COORDINÁ TU PRÁCTICA",
       image: "/clases-uno-a-uno.png",
       reverse: false,
     },
@@ -34,9 +34,18 @@ export default function Practices() {
       duration: "60min",
       description:
         "Un espacio seguro para habitar tu embarazo con presencia, conexión y confianza. Las clases están diseñadas para acompañarte amorosamente en cada etapa, respetando tus tiempos, tus cambios y las necesidades de tu cuerpo. Aprendé a aliviar tensiones, fortalecer tu suelo pélvico, conectar con tu bebé y prepararte para el parto a través de prácticas conscientes, adaptadas a cada trimestre y a cada mujer.",
-      schedule: "CADA LUNES & MIÈRCOLES",
-      image: "/prenatal.png",
+      schedule: "COORDINÁ TU PRÁCTICA",
+      image: "/ayurveda.png",
       reverse: true,
+    },
+    {
+      title: "Meditación",
+      duration: "60min",
+      description:
+        "Un espacio para pausar y habitar. A través de prácticas guiadas de relajación, respiración y presencia consciente, la meditación ayuda a reducir el estrés, la ansiedad y el insomnio, restaurando la energía, favoreciendo un estado de calma y claridad  ✨",
+      schedule: "COORDINÁ TU MEDITACIÓN",
+      image: "/meditacion.png",
+      reverse: false,
     },
   ];
 

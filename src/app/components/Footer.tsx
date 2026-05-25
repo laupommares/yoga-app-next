@@ -14,7 +14,7 @@ export default function Footer() {
       {/* LOGO */}
       <div className="flex flex-col items-center justify-center gap-4 text-center lg:text-left">
         <Image
-          src="/logo.svg"
+          src="/logo-yoga.svg"
           alt="Yoga con Jori"
           width={110}
           height={32}/>

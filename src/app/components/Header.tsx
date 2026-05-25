@@ -10,8 +10,7 @@ export default function Header() {
   const links = [
     { href: "#home", label: "Inicio" },
     { href: "#about", label: "Mi filosofía" },
-    { href: "#journey", label: "Horarios" }, 
-    { href: "#booking", label: "Precios" },
+    { href: "#journey", label: "Clases" }, 
     { href: "#practices", label: "Propuestas" },
   ];
 
@@ -42,7 +41,7 @@ export default function Header() {
     <nav className="fixed top-0 z-50 w-full border-b border-stone-200/40 bg-stone-50/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-screen-2xl items-center justify-between px-8 py-4 lg:px-16">
         <a href="#home" className="shrink-0">
-          <Image src="/logo.svg" alt="Logo" width={118} height={34} className="w-28 lg:w-30" />
+          <Image src="/logo-yoga.svg" alt="Logo" width={118} height={34} className="w-28 lg:w-30" />
         </a>
 
         <div className="hidden md:flex items-center gap-4 lg:gap-8 text-xs tracking-widest">

@@ -33,7 +33,7 @@ export default function AboutSection() {
 
               <p>
                 Actualmente lo vivo con pasión, es mi hábito de conexión, presencia y bienestar real. En mis clases vas
-                a encontrar un espacio para volver al cuerpo, respirar con más conciencia, habitar tus emociones y
+                a encontrar un espacio para volver al cuerpo, flexibilizar, elongar, fortalecer, respirar con más conciencia, habitar tus emociones y
                 cultivar una relación más amable con vos mism@.
               </p>
 

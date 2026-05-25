@@ -11,7 +11,8 @@ export default function JourneySection() {
             </p>
 
             <h2 className="text-2xl md:text-3xl font-light">
-              El yoga también es movimiento, cambio y exploración
+              YOGA me recuerda que el verdadero hogar habita dentro nuestro.
+              Por eso, aunque cambie el paisaje, la conexión permanece.
             </h2>
           </div>
 
