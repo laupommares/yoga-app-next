@@ -15,7 +15,7 @@ export default function Practices() {
       title: "Ashtanga Vinyasa",
       duration: "60min",
       description:
-        "Una práctica dinámica que sincroniza respiracion y movimiento, basada en una secuencia tradicional que se aprende progresivamente Mediante la repetición desarrolla tu fuerza, flexibilidad, presencia, purificando tu energia y calmando las fluctuaciones de la mente.",
+        "Una práctica dinámica que sincroniza respiracion y movimiento, basada en una secuencia tradicional que se aprende progresivamente. Mediante la repetición desarrolla tu fuerza, flexibilidad, presencia, purificando tu energia y calmando las fluctuaciones de la mente.",
       schedule: "COORDINÁ TU PRÁCTICA",
       image: "/ashtanga.png",
       reverse: true,
@@ -42,7 +42,7 @@ export default function Practices() {
       title: "Meditación",
       duration: "60min",
       description:
-        "Un espacio para pausar y habitar. A través de prácticas guiadas de relajación, respiración y presencia consciente, la meditación ayuda a reducir el estrés, la ansiedad y el insomnio, restaurando la energía, favoreciendo un estado de calma y claridad  ✨",
+        "Un espacio para pausar y habitar. A través de prácticas guiadas de relajación, respiración y presencia consciente, la meditación ayuda a reducir el estrés, la ansiedad y el insomnio, restaurando la energía, favoreciendo un estado de calma y claridad.",
       schedule: "COORDINÁ TU MEDITACIÓN",
       image: "/meditacion.png",
       reverse: false,
