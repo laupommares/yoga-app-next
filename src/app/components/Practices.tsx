@@ -86,7 +86,7 @@ export default function Practices() {
 
                 <p className="mb-4 text-sm leading-relaxed text-text-secondary">{item.description}</p>
 
-                <a href="#schedule" className="btn-link">
+                <a href="#journey" className="btn-link">
                   {item.schedule}
                 </a>
               </div>

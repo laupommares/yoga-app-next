@@ -87,7 +87,7 @@ export default function Header() {
             </a>
           ))}
 
-          <a href="#schedule"
+          <a href="#journey"
             onClick={() => setOpen(false)}
             className="mt-2 rounded-xs bg-primary px-6 py-3 text-[11px] uppercase tracking-[0.18em] text-on-primary">
             Reservar clase
